@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Template Status and Known Limitations - Open Animal Nutrition — Adequacy Interoperability Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Open Animal Nutrition — Adequacy Interoperability Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - Pre-ratification draft
+
+
+
+  <img alt="International flag" src="../assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="band-computation.html">Band Computation (proposed)</a>
+  </li>
+  <li>
+    <a href="known-limitations.html">Template Status</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Template Status and Known Limitations</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Open Animal Nutrition — Adequacy Interoperability Guide (v0.1.0: Pre-ratification Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R5">FHIR (HL7® FHIR® Standard) v5.0.0</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://openanimalnutrition.org/fhir/animal-nutrition/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Template Status and Known Limitations</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#status" id="markdown-toc-status">Status</a></li>
+  <li><a href="#standards" id="markdown-toc-standards">Standards</a></li>
+  <li><a href="#what-the-descriptions-show" id="markdown-toc-what-the-descriptions-show">What the descriptions show</a></li>
+  <li><a href="#known-limitations" id="markdown-toc-known-limitations">Known limitations</a></li>
+  <li><a href="#errata-for-copies-of-earlier-versions" id="markdown-toc-errata-for-copies-of-earlier-versions">Errata for copies of earlier versions</a></li>
+</ul>
+
+</div>
+<p>This page is for readers who use the source template's data without its cell
+notes: exports, programs and AI checkers. It gives the template's status and
+its known limitations, as the template's own status block states them
+(Standards tab, cell A2 and rows 132 to 149, Version 21OCT26c), and the errata
+for copies of earlier versions. The template's cell notes named below give the
+details. How the template computes the bands, and the proposed rules for a
+verdict, are on the
+<a href="band-computation.html">Decile Basis and Band Computation</a> page.</p>
+
+<h3 id="status">Status</h3>
+
+<p>The source template is the <em>Standardized Nutrient Ranges | Dynamic Decile
+System Table</em>. Its last version, 21OCT26c, has been live since 25 October
+2026: the final feature version, 21OCT26, with the wording of four texts
+corrected (21OCT26b) and its status text updated (21OCT26c). In the
+template's words (cells A133 to A135):</p>
+
+<blockquote>
+  <p>Status: this is the final feature version of this sheet. It is frozen: only
+errors are corrected, each with a new version label and a row on the History
+of Change(s) sheet; no new inputs, requirements, rules or standards editions
+are added. Requests for new features are taken for the code version, not for
+this sheet.</p>
+
+  <p>The code version, the Open Animal Nutrition checker, is live at
+https://openanimalnutrition.org/ (for people) and
+https://checker.openanimalnutrition.org/mcp (for AI systems, no sign-in).
+For each nutrient it names the facts a result depends on that it does not
+take as inputs (e.g., age, breed, whether a nutrient is added as an
+additive).</p>
+
+  <p>Since 24 Oct 2026 (checker release 0.5.0), the checker, not this sheet, is
+the reference implementation of the computation proposed by Open Animal
+Nutrition; its verdicts deficient and excess remain the provisional
+steward's proposal, pending ratification. Run with this sheet's rules, it
+reproduces this sheet. Its own rules, where they differ from this sheet's
+and why, and the Open Animal Nutrition FHIR Implementation Guide are at
+https://github.com/openanimalnutrition.</p>
+</blockquote>
+
+<ul>
+  <li><strong>The template is retired.</strong> It is no longer changed, although cell A133
+still describes error corrections: corrections are made in the checker and
+recorded in its changes document.</li>
+  <li><strong>The code version is the reference.</strong> The code version (Python), the
+<a href="https://github.com/openanimalnutrition/animal-nutrition-checker">checker</a>,
+run with the template's rules, which it keeps for this check, gives the
+template's results on its released test cases, and the provisional steward
+approved, on 22 October 2026, each case where it gives a different result,
+with its reason. It has been the reference since 24 October 2026, from its
+release 0.5.0. Its own rules that differ from the template's, set on 23
+and 24 October 2026, are recorded with their reasons in its
+<a href="https://github.com/openanimalnutrition/animal-nutrition-checker/blob/main/docs/changes-from-21OCT26b.md">changes document</a>.
+It reads its requirement values, each with its source, from its data
+folder.</li>
+  <li><strong>The adequacy interpretation stays proposed.</strong> Which values are
+<code class="language-plaintext highlighter-rouge">deficient</code> or <code class="language-plaintext highlighter-rouge">excess</code> is the provisional steward's proposal, pending
+ratification by the governance body, in the code version as on the
+<a href="band-computation.html">Decile Basis and Band Computation</a> page.</li>
+  <li><strong>Errors</strong> in a value or a rule are corrected in the checker: report them
+with the issue forms in the
+<a href="https://github.com/openanimalnutrition/animal-nutrition-checker/issues/new/choose">checker's repository</a>.
+Differences between the checker and this guide can be reported in the
+guide's
+<a href="https://github.com/openanimalnutrition/animal-nutrition-ig">source repository</a>.</li>
+</ul>
+
+<h3 id="standards">Standards</h3>
+
+<p>In the template's words (cell A136):</p>
+
+<blockquote>
+  <p>Standards: 2006 NRC Nutrient Requirements of Dogs and Cats; 2026 AAFCO
+Official Publication (Dog and Cat Food Nutrient Profiles); FEDIAF Nutritional
+Guidelines, September 2025.</p>
+</blockquote>
+
+<p>This guide's <a href="CodeSystem-requirement-standard.html">Requirement Standards</a> code
+system has a code for each edition: <code class="language-plaintext highlighter-rouge">NRC-2006</code>, <code class="language-plaintext highlighter-rouge">AAFCO-2026</code> and <code class="language-plaintext highlighter-rouge">FEDIAF-2025</code>.</p>
+
+<h3 id="what-the-descriptions-show">What the descriptions show</h3>
+
+<p>In the template's words (cells A137 and A138):</p>
+
+<blockquote>
+  <p>The descriptors compare the entered values with the selected requirement's
+ranges only; they do not show that a diet is adequate, safe or compliant
+(see the L1 and G1 notes).</p>
+
+  <p>A value above a range high reads Highest. The Open Animal Nutrition FHIR IG
+calls a value excess only above an authoritative max (max types in columns
+AU to BO of the Healthy Dog Cat Reqt Data sheet; see the E5 note); this
+grouping is proposed, pending ratification.</p>
+</blockquote>
+
+<p>The grouping is under <a href="band-computation.html#maximum-types">Maximum types</a>.</p>
+
+<h3 id="known-limitations">Known limitations</h3>
+
+<p>The template has no input for the conditions below. In the template's words
+(cells A139 to A149; the cell notes named are on the Standards tab unless
+stated):</p>
+
+<blockquote>
+  <p>Known limitations (this sheet has no input for them; details in the notes
+named):</p>
+
+  <ol>
+    <li>Age: FEDIAF Dog Late Growth puppies with an expected adult weight over
+15 kg keep the calcium min of 2.5 g/Mcal and the Ca:P max of 1.6 after
+about 6 months of age, when FEDIAF allows 2.0 and 1.8 (AE52 and AF56 notes
+on the Healthy Dog Cat Reqt Data sheet).</li>
+    <li>Breed: FEDIAF's preferred calcium max for Great Dane puppies (1.6% DM) is
+not applied (B63 note).</li>
+    <li>Added nutrients: FEDIAF's EU legal maxs for copper, iodine, iron,
+manganese, selenium and zinc apply only to amounts added as additives, but
+are applied here to every diet (J3 note on the Healthy Dog Cat Reqt Data
+sheet).</li>
+    <li>Sources: iron added as oxide or carbonate and copper added as oxide should
+not be counted toward the mins (B78 and B80 notes); limits on added
+selenium and on phosphorus from soluble sources (cats) are not checked (B89
+and B67 notes).</li>
+    <li>Conditional mins: the cat vitamin K and biotin mins apply to every diet,
+although the standards make them conditional (B102 and B116 notes).</li>
+    <li>Reference animals: NRC's per kg body weight^0.67 values for kittens and
+lactating queens apply to one reference animal; this sheet uses them for
+every kitten or queen (AG3 and AQ3 notes on the Healthy Dog Cat Reqt Data
+sheet).</li>
+    <li>Moisture: foods with more than 12% moisture count as wet, a lower cut
+than FEDIAF's 14% (B40 note); FEDIAF's wet-diet selenium values per kg
+BW^0.75 (dogs) or BW^0.67 (cats) are not used (B91 note).</li>
+    <li>Energy density: under an AAFCO requirement, the mins of a food below
+4 kcal/g DM are raised to AAFCO's dry matter basis but its maxs stay per
+Mcal, so it can read above a max it meets on a dry matter basis (C130
+note).</li>
+    <li>Not calculated, only stated in notes: FEDIAF's increase of essential
+amino acids below 80% protein digestibility and the protein needs of
+bitches fed little carbohydrate (B12), vitamin E for high PUFA or fish oil
+diets (B100), vitamin B6 with protein in cats (B112), trace minerals at
+high calcium (B85), magnesium and urine pH in cats (B76), and processing
+and storage losses (G1 and B104).</li>
+    <li>This sheet's own choices where the standards give no value: range highs
+derived from the min (K1 and K72 notes; Exceptions to Range High sheet),
+the carbohydrate default min (C124), the energy density range (C130), the
+energy estimates for the AAFCO requirements (G4 note on the Healthy Dog
+Cat Reqt Data sheet) and the folate DFE conversion (B114).</li>
+  </ol>
+</blockquote>
+
+<p>For the conflicts found in applying the standards' figures and the stated
+rules, see
+<a href="band-computation.html#conflicts-for-the-governance-body">Conflicts for the governance body</a>.</p>
+
+<h3 id="errata-for-copies-of-earlier-versions">Errata for copies of earlier versions</h3>
+
+<p>Copies of the template stay in use after a new version is released. A copy's
+version label is in its cell A1. Known errors in earlier versions:</p>
+
+<ul>
+  <li><strong>NRC puppy and bitch values per kg BW^0.75 (Version 18OCT26 and
+earlier).</strong> Under NRC RA Puppy 4-14 Wk Growth, NRC RA Puppy 14
+Wk+ Growth and NRC RA Dog Late Gestation &amp; Peak Lactation, the MBW rows hold NRC's values per kg BW^0.75. NRC states these for one
+reference animal only (a 5.5 kg puppy of 35 kg expected mature body weight;
+a 22 kg bitch in peak lactation with 8 puppies, eating 5,000 kcal ME a day),
+and calculates other animals' needs from the per-1,000 kcal values. The
+template converts them with each animal's own energy, so they misread. For
+example, a 15 kg bitch at the template's default inputs (late gestation
+energy, 1,380.9 kcal a day) fed exactly her per-Mcal minimums reads Severely
+Restricted on all 42 of her MBW rows (protein MBW minimum 135.8 against 50
+g/Mcal), and her vitamin D MBW maximum reads 2,163.7 against NRC's
+800 IU/Mcal safe upper limit. For puppies the MBW minimums read about 0.5 to 2.2 times the per-Mcal
+minimums (from 10% to 100% of the expected mature body weight), and above about 88% of the expected mature
+body weight the calcium MBW minimum passes NRC's 4.5 g/Mcal safe upper
+limit, so no diet meets both rows. In such a copy, use the per-Mcal rows
+under these three selections and disregard their MBW rows, or use Version 21OCT26c, which has no MBW values for them.</li>
+  <li><strong>Wording of four texts (Version 21OCT26).</strong> Status items 6 and 7 (cells
+A145 and A146) and the notes on cells AG3 and AQ3 of the Healthy Dog Cat
+Reqt Data tab say per kg body weight for values per kg BW^0.75 or BW^0.67.
+No value or formula is affected. Version 21OCT26b corrects the wording.</li>
+</ul>
+
+<p>The template's History of Change(s) tab lists every change in each version,
+and the <a href="band-computation.html#earlier-versions">Decile Basis and Band Computation</a>
+page summarizes the changes in Versions 21OCT26, 21OCT26b and 21OCT26c.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://openanimalnutrition.org">DVM Consulting, Inc. (provisional steward)</a>.  
+          Package openanimalnutrition.fhir.animalnutrition#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
+          Generated 
+  <span title="2026-10-26 20:14:00 +0000">
+    2026-10-26
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

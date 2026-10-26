@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="oan-assessment-code"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem oan-assessment-code</b></p><a name="oan-assessment-code"> </a><a name="hcoan-assessment-code"> </a><p>This case-sensitive code system <code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/oan-assessment-code</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">diet-adequacy<a name="oan-assessment-code-diet-adequacy"> </a></td><td>Diet nutrient adequacy assessment</td></tr></table></div>
+  </text>
+  <url value="https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/oan-assessment-code"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.1004.16.7"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="OANAssessmentCS"/>
+  <title value="OAN Assessment Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-26T20:13:21+00:00"/>
+  <publisher value="DVM Consulting, Inc. (provisional steward)"/>
+  <contact>
+    <name value="DVM Consulting, Inc. (provisional steward)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openanimalnutrition.org"/>
+    </telecom>
+  </contact>
+  <description value="Codes for the kind of assessment an Open Animal Nutrition observation records."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="diet-adequacy"/>
+    <display value="Diet nutrient adequacy assessment"/>
+  </concept>
+</CodeSystem>

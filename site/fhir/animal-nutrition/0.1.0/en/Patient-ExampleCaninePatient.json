@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Patient",
+  "id" : "ExampleCaninePatient",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient ExampleCaninePatient</b></p><a name=\"ExampleCaninePatient\"> </a><a name=\"hcExampleCaninePatient\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This patient is known to be an animal.\">Patient Animal:</td><td colspan=\"3\"><ul><li>species: <span title=\"Codes:{https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species canine}\">Dog (Canis lupus familiaris)</span></li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "species",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species",
+          "code" : "canine"
+        }]
+      }
+    }],
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-animal"
+  }],
+  "active" : true,
+  "gender" : "female"
+}

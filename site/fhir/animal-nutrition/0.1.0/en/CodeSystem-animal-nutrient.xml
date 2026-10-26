@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="animal-nutrient"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem animal-nutrient</b></p><a name="animal-nutrient"> </a><a name="hcanimal-nutrient"> </a><p>This case-sensitive code system <code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">protein<a name="animal-nutrient-protein"> </a></td><td>Crude protein</td></tr><tr><td style="white-space:nowrap">calcium<a name="animal-nutrient-calcium"> </a></td><td>Calcium</td></tr><tr><td style="white-space:nowrap">phosphorus<a name="animal-nutrient-phosphorus"> </a></td><td>Phosphorus</td></tr><tr><td style="white-space:nowrap">potassium<a name="animal-nutrient-potassium"> </a></td><td>Potassium</td></tr><tr><td style="white-space:nowrap">ca-p-ratio<a name="animal-nutrient-ca-p-ratio"> </a></td><td>Calcium:Phosphorus ratio</td></tr><tr><td style="white-space:nowrap">vitamin-d<a name="animal-nutrient-vitamin-d"> </a></td><td>Vitamin D</td></tr></table></div>
+  </text>
+  <url value="https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.1004.16.2"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="AnimalNutrientCS"/>
+  <title value="Animal Nutrients (STUB)"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-26T20:13:21+00:00"/>
+  <publisher value="DVM Consulting, Inc. (provisional steward)"/>
+  <contact>
+    <name value="DVM Consulting, Inc. (provisional steward)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openanimalnutrition.org"/>
+    </telecom>
+  </contact>
+  <description value="STUB. Populate from the canonical nutrient list; map to SNOMED-vet / LOINC where possible. Ratio nutrients (e.g. Ca:P) need explicit handling, and non-linear ratios are excluded from the component model by design (see the [Animal Nutrient Adequacy Assessment](StructureDefinition-animal-nutrient-adequacy.html) profile). Which ratios count as non-linear is an open point on the [Decile Basis and Band Computation](band-computation.html) page."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="protein"/>
+    <display value="Crude protein"/>
+  </concept>
+  <concept>
+    <code value="calcium"/>
+    <display value="Calcium"/>
+  </concept>
+  <concept>
+    <code value="phosphorus"/>
+    <display value="Phosphorus"/>
+  </concept>
+  <concept>
+    <code value="potassium"/>
+    <display value="Potassium"/>
+  </concept>
+  <concept>
+    <code value="ca-p-ratio"/>
+    <display value="Calcium:Phosphorus ratio"/>
+  </concept>
+  <concept>
+    <code value="vitamin-d"/>
+    <display value="Vitamin D"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,55 @@
+# openanimalnutrition.fhir.animalnutrition#0.1.0: Open Animal Nutrition — Adequacy Interoperability Guide(en)
+
+## Pages
+
+* [Open Animal Nutrition](index.md)
+* [Decile Basis and Band Computation (proposed, pending ratification)](band-computation.md)
+* [Template Status and Known Limitations](known-limitations.md)
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### CodeSystems
+
+* [Adequacy Interpretation](CodeSystem-adequacy-interpretation.md)
+* [Animal Nutrients (STUB)](CodeSystem-animal-nutrient.md)
+* [Animal Species (STUB)](CodeSystem-animal-species.md)
+* [Life Stages](CodeSystem-life-stage.md)
+* [Maximum Provenance Codes](CodeSystem-maximum-provenance-code.md)
+* [Nutrient Decile Bands](CodeSystem-nutrient-decile.md)
+* [OAN Assessment Codes](CodeSystem-oan-assessment-code.md)
+* [Requirement Standards](CodeSystem-requirement-standard.md)
+
+### ValueSets
+
+* [Adequacy Interpretation Value Set](ValueSet-adequacy-interpretation-vs.md)
+* [Animal Nutrients Value Set](ValueSet-animal-nutrient-vs.md)
+* [Animal Species Value Set](ValueSet-animal-species-vs.md)
+* [Life Stages Value Set](ValueSet-life-stage-vs.md)
+* [Maximum Provenance Value Set](ValueSet-maximum-provenance-vs.md)
+* [Nutrient Decile Bands Value Set](ValueSet-nutrient-decile-vs.md)
+* [Requirement Standards Value Set](ValueSet-requirement-standard-vs.md)
+
+### Resource Profiles
+
+* [Animal Nutrient Adequacy Assessment](StructureDefinition-animal-nutrient-adequacy.md)
+
+### Extensions
+
+* [Applied Requirement Standard](StructureDefinition-applied-requirement-standard.md)
+* [Caloric Restriction](StructureDefinition-caloric-restriction.md)
+* [Maximum Provenance](StructureDefinition-maximum-provenance.md)
+* [Nutrient Decile (Common-Basis Expression)](StructureDefinition-nutrient-decile.md)
+* [Life Stage](StructureDefinition-nutrient-life-stage.md)
+
+### ImplementationGuides
+
+* [Open Animal Nutrition — Adequacy Interoperability Guide](ImplementationGuide-openanimalnutrition.fhir.animalnutrition.md)
+
+### Examples
+
+* [ExampleAdequacyChecker (Device)](Device-ExampleAdequacyChecker.md)
+* [ExampleAdultMaintenanceAdequacy (Observation)](Observation-ExampleAdultMaintenanceAdequacy.md)
+* [ExampleRestrictedMaintenanceAdequacy (Observation)](Observation-ExampleRestrictedMaintenanceAdequacy.md)
+* [ExampleCaninePatient (Patient)](Patient-ExampleCaninePatient.md)
+* [ExampleVeterinarian (Practitioner)](Practitioner-ExampleVeterinarian.md)

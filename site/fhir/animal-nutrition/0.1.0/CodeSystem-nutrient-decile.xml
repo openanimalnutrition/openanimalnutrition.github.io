@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nutrient-decile"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nutrient-decile</b></p><a name="nutrient-decile"> </a><a name="hcnutrient-decile"> </a><p>This case-sensitive code system <code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/nutrient-decile</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">below-min-lt25<a name="nutrient-decile-below-min-lt25"> </a></td><td>Very Severely Restricted (&lt;25% of Min)</td></tr><tr><td style="white-space:nowrap">below-min-25-50<a name="nutrient-decile-below-min-25-50"> </a></td><td>Severely Restricted (25 to &lt;50% of Min)</td></tr><tr><td style="white-space:nowrap">below-min-50-75<a name="nutrient-decile-below-min-50-75"> </a></td><td>Moderately Restricted (50 to &lt;75% of Min)</td></tr><tr><td style="white-space:nowrap">below-min-75-100<a name="nutrient-decile-below-min-75-100"> </a></td><td>Slightly Restricted (75 to &lt;100% of Min)</td></tr><tr><td style="white-space:nowrap">range-d1<a name="nutrient-decile-range-d1"> </a></td><td>Lowest/Just Above Min (Min to &lt;10% of Range)</td></tr><tr><td style="white-space:nowrap">range-d2<a name="nutrient-decile-range-d2"> </a></td><td>Lower (10 to &lt;20% of Range)</td></tr><tr><td style="white-space:nowrap">range-d3<a name="nutrient-decile-range-d3"> </a></td><td>Low (20 to &lt;30% of Range)</td></tr><tr><td style="white-space:nowrap">range-d4<a name="nutrient-decile-range-d4"> </a></td><td>Low Moderate (30 to &lt;40% of Range)</td></tr><tr><td style="white-space:nowrap">range-d5<a name="nutrient-decile-range-d5"> </a></td><td>Mid Moderate (40 to &lt;50% of Range)</td></tr><tr><td style="white-space:nowrap">range-d6<a name="nutrient-decile-range-d6"> </a></td><td>High Moderate (50 to &lt;60% of Range)</td></tr><tr><td style="white-space:nowrap">range-d7<a name="nutrient-decile-range-d7"> </a></td><td>High (60 to &lt;70% of Range)</td></tr><tr><td style="white-space:nowrap">range-d8<a name="nutrient-decile-range-d8"> </a></td><td>Higher (70 to &lt;80% of Range)</td></tr><tr><td style="white-space:nowrap">range-d9<a name="nutrient-decile-range-d9"> </a></td><td>Near Highest (80 to &lt;90% of Range)</td></tr><tr><td style="white-space:nowrap">range-d10<a name="nutrient-decile-range-d10"> </a></td><td>Highest (90% of Range or Greater)</td></tr></table></div>
+  </text>
+  <url value="https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/nutrient-decile"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.1004.16.6"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="NutrientDecileCS"/>
+  <title value="Nutrient Decile Bands"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-26T20:13:21+00:00"/>
+  <publisher value="DVM Consulting, Inc. (provisional steward)"/>
+  <contact>
+    <name value="DVM Consulting, Inc. (provisional steward)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openanimalnutrition.org"/>
+    </telecom>
+  </contact>
+  <description value="The 14 bands of the Dynamic Decile System: four bands below the requirement minimum, as a share of the minimum, and ten deciles from the minimum to the range high. Where an entry gets a band, a value above the range high is in range-d10 unless it is below the minimum. The computation is stated, proposed and pending ratification, on the [Decile Basis and Band Computation](band-computation.html) page."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="14"/>
+  <concept>
+    <code value="below-min-lt25"/>
+    <display value="Very Severely Restricted (&lt;25% of Min)"/>
+  </concept>
+  <concept>
+    <code value="below-min-25-50"/>
+    <display value="Severely Restricted (25 to &lt;50% of Min)"/>
+  </concept>
+  <concept>
+    <code value="below-min-50-75"/>
+    <display value="Moderately Restricted (50 to &lt;75% of Min)"/>
+  </concept>
+  <concept>
+    <code value="below-min-75-100"/>
+    <display value="Slightly Restricted (75 to &lt;100% of Min)"/>
+  </concept>
+  <concept>
+    <code value="range-d1"/>
+    <display value="Lowest/Just Above Min (Min to &lt;10% of Range)"/>
+  </concept>
+  <concept>
+    <code value="range-d2"/>
+    <display value="Lower (10 to &lt;20% of Range)"/>
+  </concept>
+  <concept>
+    <code value="range-d3"/>
+    <display value="Low (20 to &lt;30% of Range)"/>
+  </concept>
+  <concept>
+    <code value="range-d4"/>
+    <display value="Low Moderate (30 to &lt;40% of Range)"/>
+  </concept>
+  <concept>
+    <code value="range-d5"/>
+    <display value="Mid Moderate (40 to &lt;50% of Range)"/>
+  </concept>
+  <concept>
+    <code value="range-d6"/>
+    <display value="High Moderate (50 to &lt;60% of Range)"/>
+  </concept>
+  <concept>
+    <code value="range-d7"/>
+    <display value="High (60 to &lt;70% of Range)"/>
+  </concept>
+  <concept>
+    <code value="range-d8"/>
+    <display value="Higher (70 to &lt;80% of Range)"/>
+  </concept>
+  <concept>
+    <code value="range-d9"/>
+    <display value="Near Highest (80 to &lt;90% of Range)"/>
+  </concept>
+  <concept>
+    <code value="range-d10"/>
+    <display value="Highest (90% of Range or Greater)"/>
+  </concept>
+</CodeSystem>

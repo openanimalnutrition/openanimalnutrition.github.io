@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="ExampleAdequacyChecker"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device ExampleAdequacyChecker</b></p><a name="ExampleAdequacyChecker"> </a><a name="hcExampleAdequacyChecker"> </a><h3>Names</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Example Adequacy Checker</td><td>User Friendly name</td></tr></table><h3>Versions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>1.0.0</td></tr></table></div>
+  </text>
+  <name>
+    <value value="Example Adequacy Checker"/>
+    <type value="user-friendly-name"/>
+  </name>
+  <version>
+    <value value="1.0.0"/>
+  </version>
+</Device>

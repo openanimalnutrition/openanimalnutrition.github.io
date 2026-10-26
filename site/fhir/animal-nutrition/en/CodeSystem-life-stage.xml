@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="life-stage"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem life-stage</b></p><a name="life-stage"> </a><a name="hclife-stage"> </a><p>This case-sensitive code system <code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/life-stage</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">growth<a name="life-stage-growth"> </a></td><td>Growth</td></tr><tr><td style="white-space:nowrap">gestation-lactation<a name="life-stage-gestation-lactation"> </a></td><td>Gestation / Lactation</td></tr><tr><td style="white-space:nowrap">adult-maintenance<a name="life-stage-adult-maintenance"> </a></td><td>Adult maintenance</td></tr><tr><td style="white-space:nowrap">all-life-stages<a name="life-stage-all-life-stages"> </a></td><td>All life stages</td></tr></table></div>
+  </text>
+  <url value="https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/life-stage"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.1004.16.4"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="LifeStageCS"/>
+  <title value="Life Stages"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-26T20:14:00+00:00"/>
+  <publisher value="DVM Consulting, Inc. (provisional steward)"/>
+  <contact>
+    <name value="DVM Consulting, Inc. (provisional steward)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openanimalnutrition.org"/>
+    </telecom>
+  </contact>
+  <description value="Life stages for which requirement standards set nutrient requirements."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="growth"/>
+    <display value="Growth"/>
+  </concept>
+  <concept>
+    <code value="gestation-lactation"/>
+    <display value="Gestation / Lactation"/>
+  </concept>
+  <concept>
+    <code value="adult-maintenance"/>
+    <display value="Adult maintenance"/>
+  </concept>
+  <concept>
+    <code value="all-life-stages"/>
+    <display value="All life stages"/>
+  </concept>
+</CodeSystem>

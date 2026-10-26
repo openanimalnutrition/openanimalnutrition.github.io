@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="ExampleVeterinarian"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner ExampleVeterinarian</b></p><a name="ExampleVeterinarian"> </a><a name="hcExampleVeterinarian"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Example Veterinarian</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr></table></div>
+  </text>
+  <active value="true"/>
+  <name>
+    <text value="Example Veterinarian"/>
+  </name>
+</Practitioner>

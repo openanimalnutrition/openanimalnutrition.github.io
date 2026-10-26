@@ -1,0 +1,176 @@
+[{
+  "id" : "adequacy-interpretation",
+  "type" : "CodeSystem",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/adequacy-interpretation",
+  "version" : "0.1.0",
+  "name" : "AdequacyInterpretationCS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.16.1"]
+},
+{
+  "id" : "animal-nutrient",
+  "type" : "CodeSystem",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient",
+  "version" : "0.1.0",
+  "name" : "AnimalNutrientCS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.16.2"]
+},
+{
+  "id" : "animal-species",
+  "type" : "CodeSystem",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species",
+  "version" : "0.1.0",
+  "name" : "AnimalSpeciesCS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.16.3"]
+},
+{
+  "id" : "life-stage",
+  "type" : "CodeSystem",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/life-stage",
+  "version" : "0.1.0",
+  "name" : "LifeStageCS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.16.4"]
+},
+{
+  "id" : "maximum-provenance-code",
+  "type" : "CodeSystem",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/maximum-provenance-code",
+  "version" : "0.1.0",
+  "name" : "MaximumProvenanceCS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.16.5"]
+},
+{
+  "id" : "nutrient-decile",
+  "type" : "CodeSystem",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/nutrient-decile",
+  "version" : "0.1.0",
+  "name" : "NutrientDecileCS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.16.6"]
+},
+{
+  "id" : "oan-assessment-code",
+  "type" : "CodeSystem",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/oan-assessment-code",
+  "version" : "0.1.0",
+  "name" : "OANAssessmentCS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.16.7"]
+},
+{
+  "id" : "requirement-standard",
+  "type" : "CodeSystem",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard",
+  "version" : "0.1.0",
+  "name" : "RequirementStandardCS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.16.8"]
+},
+{
+  "id" : "openanimalnutrition.fhir.animalnutrition",
+  "type" : "ImplementationGuide",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ImplementationGuide/openanimalnutrition.fhir.animalnutrition",
+  "version" : "0.1.0",
+  "name" : "OpenAnimalNutrition",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004"]
+},
+{
+  "id" : "animal-nutrient-adequacy",
+  "type" : "StructureDefinition",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/animal-nutrient-adequacy",
+  "version" : "0.1.0",
+  "name" : "AnimalNutrientAdequacy",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.42.1"]
+},
+{
+  "id" : "applied-requirement-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/applied-requirement-standard",
+  "version" : "0.1.0",
+  "name" : "AppliedRequirementStandard",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.42.2"]
+},
+{
+  "id" : "caloric-restriction",
+  "type" : "StructureDefinition",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/caloric-restriction",
+  "version" : "0.1.0",
+  "name" : "CaloricRestriction",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.42.6"]
+},
+{
+  "id" : "maximum-provenance",
+  "type" : "StructureDefinition",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/maximum-provenance",
+  "version" : "0.1.0",
+  "name" : "MaximumProvenance",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.42.3"]
+},
+{
+  "id" : "nutrient-decile",
+  "type" : "StructureDefinition",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/nutrient-decile",
+  "version" : "0.1.0",
+  "name" : "NutrientDecile",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.42.4"]
+},
+{
+  "id" : "nutrient-life-stage",
+  "type" : "StructureDefinition",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/nutrient-life-stage",
+  "version" : "0.1.0",
+  "name" : "NutrientLifeStage",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.42.5"]
+},
+{
+  "id" : "adequacy-interpretation-vs",
+  "type" : "ValueSet",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/adequacy-interpretation-vs",
+  "version" : "0.1.0",
+  "name" : "AdequacyInterpretationVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.48.1"]
+},
+{
+  "id" : "animal-nutrient-vs",
+  "type" : "ValueSet",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/animal-nutrient-vs",
+  "version" : "0.1.0",
+  "name" : "AnimalNutrientVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.48.2"]
+},
+{
+  "id" : "animal-species-vs",
+  "type" : "ValueSet",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/animal-species-vs",
+  "version" : "0.1.0",
+  "name" : "AnimalSpeciesVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.48.3"]
+},
+{
+  "id" : "life-stage-vs",
+  "type" : "ValueSet",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/life-stage-vs",
+  "version" : "0.1.0",
+  "name" : "LifeStageVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.48.4"]
+},
+{
+  "id" : "maximum-provenance-vs",
+  "type" : "ValueSet",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/maximum-provenance-vs",
+  "version" : "0.1.0",
+  "name" : "MaximumProvenanceVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.48.5"]
+},
+{
+  "id" : "nutrient-decile-vs",
+  "type" : "ValueSet",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/nutrient-decile-vs",
+  "version" : "0.1.0",
+  "name" : "NutrientDecileVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.48.6"]
+},
+{
+  "id" : "requirement-standard-vs",
+  "type" : "ValueSet",
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/requirement-standard-vs",
+  "version" : "0.1.0",
+  "name" : "RequirementStandardVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.1004.48.7"]
+}]

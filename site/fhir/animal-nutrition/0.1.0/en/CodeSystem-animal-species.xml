@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="animal-species"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem animal-species</b></p><a name="animal-species"> </a><a name="hcanimal-species"> </a><p>This case-sensitive code system <code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">canine<a name="animal-species-canine"> </a></td><td>Dog (Canis lupus familiaris)</td></tr><tr><td style="white-space:nowrap">feline<a name="animal-species-feline"> </a></td><td>Cat (Felis catus)</td></tr></table></div>
+  </text>
+  <url value="https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.1004.16.3"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="AnimalSpeciesCS"/>
+  <title value="Animal Species (STUB)"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-26T20:13:21+00:00"/>
+  <publisher value="DVM Consulting, Inc. (provisional steward)"/>
+  <contact>
+    <name value="DVM Consulting, Inc. (provisional steward)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openanimalnutrition.org"/>
+    </telecom>
+  </contact>
+  <description value="STUB. v0.1 implemented coverage only. TODO: bind to an external species value set."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="canine"/>
+    <display value="Dog (Canis lupus familiaris)"/>
+  </concept>
+  <concept>
+    <code value="feline"/>
+    <display value="Cat (Felis catus)"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,167 @@
+OpenAnimalNutrition : Validation Results
+=========================================
+
+err = 0, warn = 0, info = 47, broken links = 0
+$--
+Generated $--. FHIR version $-- for openanimalnutrition.fhir.animalnutrition#$-- (canonical = https://openanimalnutrition.org/fhir/animal-nutrition)
+ Build Errors : 0 / 0 / 0
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/CodeSystem-adequacy-interpretation : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/CodeSystem-animal-nutrient : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/CodeSystem-animal-species : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/CodeSystem-life-stage : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/CodeSystem-maximum-provenance-code : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/CodeSystem-nutrient-decile : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/CodeSystem-oan-assessment-code : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/CodeSystem-requirement-standard : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/Device-ExampleAdequacyChecker : 0 / 0 / 1
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/ImplementationGuide-openanimalnutrition.fhir.animalnutrition : 0 / 0 / 18
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/Observation-ExampleAdultMaintenanceAdequacy : 0 / 0 / 4
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/Observation-ExampleRestrictedMaintenanceAdequacy : 0 / 0 / 4
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/Patient-ExampleCaninePatient : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/Practitioner-ExampleVeterinarian : 0 / 0 / 1
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/StructureDefinition-animal-nutrient-adequacy : 0 / 3 / 4
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/StructureDefinition-applied-requirement-standard : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/StructureDefinition-caloric-restriction : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/StructureDefinition-maximum-provenance : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/StructureDefinition-nutrient-decile : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/StructureDefinition-nutrient-life-stage : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/ValueSet-adequacy-interpretation-vs : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/ValueSet-animal-nutrient-vs : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/ValueSet-animal-species-vs : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/ValueSet-life-stage-vs : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/ValueSet-maximum-provenance-vs : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/ValueSet-nutrient-decile-vs : 0 / 0 / 2
+ /home/runner/work/_temp/work/temp/ig-builds/openanimalnutrition.fhir.animalnutrition#0.1.0/fsh-generated/resources/ValueSet-requirement-standard-vs : 0 / 0 / 2
+</table>
+
+== n/a ==
+
+
+== fsh-generated/resources/CodeSystem-adequacy-interpretation.json ==
+INFORMATION: CodeSystem/adequacy-interpretation: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/CodeSystem-animal-nutrient.json ==
+INFORMATION: CodeSystem/animal-nutrient: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/CodeSystem-animal-species.json ==
+INFORMATION: CodeSystem/animal-species: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/CodeSystem-life-stage.json ==
+INFORMATION: CodeSystem/life-stage: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/CodeSystem-maximum-provenance-code.json ==
+INFORMATION: CodeSystem/maximum-provenance-code: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/CodeSystem-nutrient-decile.json ==
+INFORMATION: CodeSystem/nutrient-decile: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/CodeSystem-oan-assessment-code.json ==
+INFORMATION: CodeSystem/oan-assessment-code: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/CodeSystem-requirement-standard.json ==
+INFORMATION: CodeSystem/requirement-standard: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/Device-ExampleAdequacyChecker.json ==
+
+
+== fsh-generated/resources/ImplementationGuide-openanimalnutrition.fhir.animalnutrition.json ==
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[5].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[6].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[7].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[8].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[9].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[10].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[11].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[12].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[13].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[14].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[15].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[16].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[17].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[18].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[19].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/openanimalnutrition.fhir.animalnutrition: ImplementationGuide.definition.parameter[25].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+
+
+== fsh-generated/resources/Observation-ExampleAdultMaintenanceAdequacy.json ==
+INFORMATION: Observation/ExampleAdultMaintenanceAdequacy: Observation.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard|0.1.0
+INFORMATION: Observation/ExampleAdultMaintenanceAdequacy: Observation.extension[1].value.ofType(CodeableConcept): Reference to draft CodeSystem https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/life-stage|0.1.0
+INFORMATION: Observation/ExampleAdultMaintenanceAdequacy: Observation.code: Reference to draft CodeSystem https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/oan-assessment-code|0.1.0
+
+
+== fsh-generated/resources/Observation-ExampleRestrictedMaintenanceAdequacy.json ==
+INFORMATION: Observation/ExampleRestrictedMaintenanceAdequacy: Observation.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard|0.1.0
+INFORMATION: Observation/ExampleRestrictedMaintenanceAdequacy: Observation.extension[1].value.ofType(CodeableConcept): Reference to draft CodeSystem https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/life-stage|0.1.0
+INFORMATION: Observation/ExampleRestrictedMaintenanceAdequacy: Observation.code: Reference to draft CodeSystem https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/oan-assessment-code|0.1.0
+
+
+== fsh-generated/resources/Patient-ExampleCaninePatient.json ==
+INFORMATION: Patient/ExampleCaninePatient: Patient.extension[0].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species|0.1.0
+
+
+== fsh-generated/resources/Practitioner-ExampleVeterinarian.json ==
+
+
+== fsh-generated/resources/StructureDefinition-animal-nutrient-adequacy.json ==
+INFORMATION: StructureDefinition/animal-nutrient-adequacy: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureDefinition/animal-nutrient-adequacy: StructureDefinition.snapshot.element[25].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/oan-assessment-code|0.1.0
+INFORMATION: StructureDefinition/animal-nutrient-adequacy: StructureDefinition.differential.element[6].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/oan-assessment-code|0.1.0
+
+
+== fsh-generated/resources/StructureDefinition-applied-requirement-standard.json ==
+INFORMATION: StructureDefinition/applied-requirement-standard: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/StructureDefinition-caloric-restriction.json ==
+INFORMATION: StructureDefinition/caloric-restriction: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/StructureDefinition-maximum-provenance.json ==
+INFORMATION: StructureDefinition/maximum-provenance: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/StructureDefinition-nutrient-decile.json ==
+INFORMATION: StructureDefinition/nutrient-decile: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/StructureDefinition-nutrient-life-stage.json ==
+INFORMATION: StructureDefinition/nutrient-life-stage: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/ValueSet-adequacy-interpretation-vs.json ==
+INFORMATION: ValueSet/adequacy-interpretation-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/ValueSet-animal-nutrient-vs.json ==
+INFORMATION: ValueSet/animal-nutrient-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/ValueSet-animal-species-vs.json ==
+INFORMATION: ValueSet/animal-species-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/ValueSet-life-stage-vs.json ==
+INFORMATION: ValueSet/life-stage-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/ValueSet-maximum-provenance-vs.json ==
+INFORMATION: ValueSet/maximum-provenance-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/ValueSet-nutrient-decile-vs.json ==
+INFORMATION: ValueSet/nutrient-decile-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
+== fsh-generated/resources/ValueSet-requirement-standard-vs.json ==
+INFORMATION: ValueSet/requirement-standard-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+

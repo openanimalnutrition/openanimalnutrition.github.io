@@ -1,0 +1,69 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "requirement-standard",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem requirement-standard</b></p><a name=\"requirement-standard\"> </a><a name=\"hcrequirement-standard\"> </a><p>This case-sensitive code system <code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">NRC<a name=\"requirement-standard-NRC\"> </a></td><td>National Research Council</td><td>The nutrient requirements of dogs and cats published by the National Research Council, edition not stated.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0NRC-2006<a name=\"requirement-standard-NRC-2006\"> </a></td><td>NRC 2006</td><td>The 2006 NRC Nutrient Requirements of Dogs and Cats.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">AAFCO<a name=\"requirement-standard-AAFCO\"> </a></td><td>Association of American Feed Control Officials</td><td>The dog and cat food nutrient profiles published by the Association of American Feed Control Officials, edition not stated.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0AAFCO-2026<a name=\"requirement-standard-AAFCO-2026\"> </a></td><td>AAFCO 2026</td><td>The 2026 AAFCO Official Publication (Dog and Cat Food Nutrient Profiles).</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">FEDIAF<a name=\"requirement-standard-FEDIAF\"> </a></td><td>European Pet Food Industry Federation</td><td>The nutritional guidelines for cats and dogs published by the European Pet Food Industry Federation, edition not stated.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0FEDIAF-2025<a name=\"requirement-standard-FEDIAF-2025\"> </a></td><td>FEDIAF September 2025</td><td>The FEDIAF Nutritional Guidelines, September 2025.</td></tr></table></div>"
+  },
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.1004.16.8"
+  }],
+  "version" : "0.1.0",
+  "name" : "RequirementStandardCS",
+  "title" : "Requirement Standards",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-10-26T20:13:21+00:00",
+  "publisher" : "DVM Consulting, Inc. (provisional steward)",
+  "contact" : [{
+    "name" : "DVM Consulting, Inc. (provisional steward)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openanimalnutrition.org"
+    }]
+  }],
+  "description" : "Published nutrient requirement standards an adequacy check can be run against. Each standards body's code has a child code for each edition (is-a); record the edition's code when the edition is known. The editions are those the source template, Version 21OCT26b, cites.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "caseSensitive" : true,
+  "hierarchyMeaning" : "is-a",
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "NRC",
+    "display" : "National Research Council",
+    "definition" : "The nutrient requirements of dogs and cats published by the National Research Council, edition not stated.",
+    "concept" : [{
+      "code" : "NRC-2006",
+      "display" : "NRC 2006",
+      "definition" : "The 2006 NRC Nutrient Requirements of Dogs and Cats."
+    }]
+  },
+  {
+    "code" : "AAFCO",
+    "display" : "Association of American Feed Control Officials",
+    "definition" : "The dog and cat food nutrient profiles published by the Association of American Feed Control Officials, edition not stated.",
+    "concept" : [{
+      "code" : "AAFCO-2026",
+      "display" : "AAFCO 2026",
+      "definition" : "The 2026 AAFCO Official Publication (Dog and Cat Food Nutrient Profiles)."
+    }]
+  },
+  {
+    "code" : "FEDIAF",
+    "display" : "European Pet Food Industry Federation",
+    "definition" : "The nutritional guidelines for cats and dogs published by the European Pet Food Industry Federation, edition not stated.",
+    "concept" : [{
+      "code" : "FEDIAF-2025",
+      "display" : "FEDIAF September 2025",
+      "definition" : "The FEDIAF Nutritional Guidelines, September 2025."
+    }]
+  }]
+}

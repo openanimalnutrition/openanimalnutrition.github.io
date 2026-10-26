@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="animal-species-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet animal-species-vs</b></p><a name="animal-species-vs"> </a><a name="hcanimal-species-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-animal-species.html"><code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/animal-species-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.1004.48.3"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="AnimalSpeciesVS"/>
+  <title value="Animal Species Value Set"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-26T20:14:00+00:00"/>
+  <publisher value="DVM Consulting, Inc. (provisional steward)"/>
+  <contact>
+    <name value="DVM Consulting, Inc. (provisional steward)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openanimalnutrition.org"/>
+    </telecom>
+  </contact>
+  <description value="All codes in the Animal Species code system (a stub in v0.1)."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species"/>
+    </include>
+  </compose>
+</ValueSet>

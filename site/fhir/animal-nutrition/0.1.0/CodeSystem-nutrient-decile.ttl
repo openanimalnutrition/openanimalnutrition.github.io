@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/nutrient-decile> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nutrient-decile"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nutrient-decile</b></p><a name=\"nutrient-decile\"> </a><a name=\"hcnutrient-decile\"> </a><p>This case-sensitive code system <code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/nutrient-decile</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">below-min-lt25<a name=\"nutrient-decile-below-min-lt25\"> </a></td><td>Very Severely Restricted (&lt;25% of Min)</td></tr><tr><td style=\"white-space:nowrap\">below-min-25-50<a name=\"nutrient-decile-below-min-25-50\"> </a></td><td>Severely Restricted (25 to &lt;50% of Min)</td></tr><tr><td style=\"white-space:nowrap\">below-min-50-75<a name=\"nutrient-decile-below-min-50-75\"> </a></td><td>Moderately Restricted (50 to &lt;75% of Min)</td></tr><tr><td style=\"white-space:nowrap\">below-min-75-100<a name=\"nutrient-decile-below-min-75-100\"> </a></td><td>Slightly Restricted (75 to &lt;100% of Min)</td></tr><tr><td style=\"white-space:nowrap\">range-d1<a name=\"nutrient-decile-range-d1\"> </a></td><td>Lowest/Just Above Min (Min to &lt;10% of Range)</td></tr><tr><td style=\"white-space:nowrap\">range-d2<a name=\"nutrient-decile-range-d2\"> </a></td><td>Lower (10 to &lt;20% of Range)</td></tr><tr><td style=\"white-space:nowrap\">range-d3<a name=\"nutrient-decile-range-d3\"> </a></td><td>Low (20 to &lt;30% of Range)</td></tr><tr><td style=\"white-space:nowrap\">range-d4<a name=\"nutrient-decile-range-d4\"> </a></td><td>Low Moderate (30 to &lt;40% of Range)</td></tr><tr><td style=\"white-space:nowrap\">range-d5<a name=\"nutrient-decile-range-d5\"> </a></td><td>Mid Moderate (40 to &lt;50% of Range)</td></tr><tr><td style=\"white-space:nowrap\">range-d6<a name=\"nutrient-decile-range-d6\"> </a></td><td>High Moderate (50 to &lt;60% of Range)</td></tr><tr><td style=\"white-space:nowrap\">range-d7<a name=\"nutrient-decile-range-d7\"> </a></td><td>High (60 to &lt;70% of Range)</td></tr><tr><td style=\"white-space:nowrap\">range-d8<a name=\"nutrient-decile-range-d8\"> </a></td><td>Higher (70 to &lt;80% of Range)</td></tr><tr><td style=\"white-space:nowrap\">range-d9<a name=\"nutrient-decile-range-d9\"> </a></td><td>Near Highest (80 to &lt;90% of Range)</td></tr><tr><td style=\"white-space:nowrap\">range-d10<a name=\"nutrient-decile-range-d10\"> </a></td><td>Highest (90% of Range or Greater)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/nutrient-decile"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.40.1004.16.6" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "NutrientDecileCS"] ; # 
+  fhir:title [ fhir:v "Nutrient Decile Bands"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-10-26T20:13:21+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DVM Consulting, Inc. (provisional steward)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DVM Consulting, Inc. (provisional steward)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://openanimalnutrition.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The 14 bands of the Dynamic Decile System: four bands below the requirement minimum, as a share of the minimum, and ten deciles from the minimum to the range high. Where an entry gets a band, a value above the range high is in range-d10 unless it is below the minimum. The computation is stated, proposed and pending ratification, on the [Decile Basis and Band Computation](band-computation.html) page."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "14"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "below-min-lt25" ] ;
+     fhir:display [ fhir:v "Very Severely Restricted (<25% of Min)" ]
+  ] [
+     fhir:code [ fhir:v "below-min-25-50" ] ;
+     fhir:display [ fhir:v "Severely Restricted (25 to <50% of Min)" ]
+  ] [
+     fhir:code [ fhir:v "below-min-50-75" ] ;
+     fhir:display [ fhir:v "Moderately Restricted (50 to <75% of Min)" ]
+  ] [
+     fhir:code [ fhir:v "below-min-75-100" ] ;
+     fhir:display [ fhir:v "Slightly Restricted (75 to <100% of Min)" ]
+  ] [
+     fhir:code [ fhir:v "range-d1" ] ;
+     fhir:display [ fhir:v "Lowest/Just Above Min (Min to <10% of Range)" ]
+  ] [
+     fhir:code [ fhir:v "range-d2" ] ;
+     fhir:display [ fhir:v "Lower (10 to <20% of Range)" ]
+  ] [
+     fhir:code [ fhir:v "range-d3" ] ;
+     fhir:display [ fhir:v "Low (20 to <30% of Range)" ]
+  ] [
+     fhir:code [ fhir:v "range-d4" ] ;
+     fhir:display [ fhir:v "Low Moderate (30 to <40% of Range)" ]
+  ] [
+     fhir:code [ fhir:v "range-d5" ] ;
+     fhir:display [ fhir:v "Mid Moderate (40 to <50% of Range)" ]
+  ] [
+     fhir:code [ fhir:v "range-d6" ] ;
+     fhir:display [ fhir:v "High Moderate (50 to <60% of Range)" ]
+  ] [
+     fhir:code [ fhir:v "range-d7" ] ;
+     fhir:display [ fhir:v "High (60 to <70% of Range)" ]
+  ] [
+     fhir:code [ fhir:v "range-d8" ] ;
+     fhir:display [ fhir:v "Higher (70 to <80% of Range)" ]
+  ] [
+     fhir:code [ fhir:v "range-d9" ] ;
+     fhir:display [ fhir:v "Near Highest (80 to <90% of Range)" ]
+  ] [
+     fhir:code [ fhir:v "range-d10" ] ;
+     fhir:display [ fhir:v "Highest (90% of Range or Greater)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,777 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://openanimalnutrition.org/fhir/animal-nutrition/ImplementationGuide/openanimalnutrition.fhir.animalnutrition> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "openanimalnutrition.fhir.animalnutrition"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide openanimalnutrition.fhir.animalnutrition</b></p><a name=\"openanimalnutrition.fhir.animalnutrition\"> </a><a name=\"hcopenanimalnutrition.fhir.animalnutrition\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>OpenAnimalNutrition</h2><p>The official URL for this implementation guide is: </p><pre>https://openanimalnutrition.org/fhir/animal-nutrition/ImplementationGuide/openanimalnutrition.fhir.animalnutrition</pre><div><p>A FHIR Implementation Guide for representing and verifying the nutritional adequacy of an animal diet against published requirement standards (NRC, AAFCO, FEDIAF), expressed on a common mathematical basis. Species-agnostic by design; v0.1 binds canine and feline coverage. This guide models the adequacy VERDICT, not the means of producing a passing diet.</p>\n</div></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/ImplementationGuide/openanimalnutrition.fhir.animalnutrition"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.40.1004" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OpenAnimalNutrition"] ; # 
+  fhir:title [ fhir:v "Open Animal Nutrition — Adequacy Interoperability Guide"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-10-26T20:13:21+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DVM Consulting, Inc. (provisional steward)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DVM Consulting, Inc. (provisional steward)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://openanimalnutrition.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A FHIR Implementation Guide for representing and verifying the nutritional adequacy of an animal diet against published requirement standards (NRC, AAFCO, FEDIAF), expressed on a common mathematical basis. Species-agnostic by design; v0.1 binds canine and feline coverage. This guide models the adequacy VERDICT, not the means of producing a passing diet."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "openanimalnutrition.fhir.animalnutrition"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
+     fhir:version [ fhir:v "7.4.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_extensions_r5" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r5" ] ;
+     fhir:version [ fhir:v "5.3.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "hl7.fhir.uv.tools.r5#1.3.0"
+       ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/adequacy-interpretation> ;
+         fhir:reference [ fhir:v "CodeSystem/adequacy-interpretation" ]
+       ] ;
+       fhir:name [ fhir:v "Adequacy Interpretation" ] ;
+       fhir:description [ fhir:v "Per-nutrient and overall interpretations of a diet's nutrient levels against the applied requirement standard. The rules for `deficient` and `excess` are stated, proposed and pending ratification, on the [Decile Basis and Band Computation](band-computation.html) page." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/adequacy-interpretation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/adequacy-interpretation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Adequacy Interpretation Value Set" ] ;
+       fhir:description [ fhir:v "All codes in the Adequacy Interpretation code system." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/Observation/ExampleRestrictedMaintenanceAdequacy> ;
+         fhir:reference [ fhir:v "Observation/ExampleRestrictedMaintenanceAdequacy" ]
+       ] ;
+       fhir:name [ fhir:v "Adult-maintenance adequacy under a 25% caloric restriction, canine, vs NRC" ] ;
+       fhir:description [ fhir:v "A dog fed 25% less energy than it needs, checked against NRC's recommended allowances for adult dogs at maintenance, under the caloric-restriction rule proposed, pending ratification, on the [Decile Basis and Band Computation](band-computation.html) page. Calcium at 1.2 g/Mcal meets NRC's minimum of 1 g/Mcal, but the restriction raises the minimum to 4/3 g/Mcal (recorded as 1.3333333, at 7 decimal places), so calcium is deficient. The overall verdict shown is illustrative: how it follows from the per-nutrient results is an open point on that page." ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/animal-nutrient-adequacy"^^xsd:anyURI ;
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/animal-nutrient-adequacy>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/Observation/ExampleAdultMaintenanceAdequacy> ;
+         fhir:reference [ fhir:v "Observation/ExampleAdultMaintenanceAdequacy" ]
+       ] ;
+       fhir:name [ fhir:v "Adult-maintenance adequacy, canine, vs AAFCO" ] ;
+       fhir:description [ fhir:v "Adequacy of a canine adult-maintenance diet against AAFCO, with one nutrient under an authoritative maximum (calcium) and one under a derived-provisional ceiling (potassium). The overall verdict shown is illustrative: how it follows from the per-nutrient results is an open point on the [Decile Basis and Band Computation](band-computation.html) page." ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/animal-nutrient-adequacy"^^xsd:anyURI ;
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/animal-nutrient-adequacy>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/animal-nutrient-adequacy> ;
+         fhir:reference [ fhir:v "StructureDefinition/animal-nutrient-adequacy" ]
+       ] ;
+       fhir:name [ fhir:v "Animal Nutrient Adequacy Assessment" ] ;
+       fhir:description [ fhir:v "The result of the agnostic, mathematical check of a diet's resolved nutrient\nprofile against a selected requirement standard (NRC / AAFCO / FEDIAF) for a\ngiven species and life stage.\n\nEach assessed nutrient is a component carrying the diet's level, the applicable\nmin/max requirement range, the common-basis decile expression, and a\nper-nutrient interpretation. The decile expression is computed as stated,\nproposed and pending ratification, on the\n[Decile Basis and Band Computation](band-computation.html) page. The top-level\ninterpretation is the overall complete-and-balanced verdict.\n\nRatio nutrients such as Ca:P are components like any other nutrient, with a\nunitless quantity (UCUM `1`). Non-linear ratio nutrients are excluded from the\ncomponent model by design.\n\nA component's interpretation is `excess` only when the value is above an\nauthoritative maximum, one set by a standards body for the animal and the use\nit is applied to (maxProvenance\n`authoritative`), and not below a minimum set by the applied standard,\nincluding one raised for a caloric restriction or by the AAFCO dry matter\nfactor (below). Above a conditional, template-set or derived-provisional\nmaximum, and not below the minimum, the interpretation stays `adequate`. The\nband is then `range-d10` (\"Highest (90% of Range or\nGreater)\"), which alone does not show that the maximum was exceeded:\nreferenceRange.high holds the maximum, and maxProvenance says what kind it is.\n\nWhere a caloric restriction, or the AAFCO dry matter factor for a food below\n4 kcal/g of dry matter, raises a minimum set by the applied standard,\nreferenceRange.low holds the raised minimum, and the band is computed from it.\nA value below it is `deficient`, even if it meets the minimum that applies\nwith no adjustment. A verdict checked under a caloric restriction above 0 records the\npercentage in `caloricRestriction`. This rule, the condition on `excess` above,\nand which minimums they cover are stated, proposed and pending ratification, on\nthe [Decile Basis and Band Computation](band-computation.html) page.\n\n`performer` is optional. When a veterinarian, nutritionist or clinic ran or\nreviewed the check, name them (Practitioner, PractitionerRole or Organization).\nThe organization that only operates the checking software is not the performer\nunless it also reviewed this verdict. Software cannot be the performer of an\nObservation in FHIR R5 (`performer` does not accept a Device). When software\ncomputed the verdict, record it in `device`: a Device whose `name` and\n`version` give the software's name and version, so a reader can tell which\nchecker, and which version of it, produced the verdict.\n\nSCOPE: this profile models the VERDICT. Ingredient selection, fortification,\nand rounding (i.e. how a passing diet is produced) are out of scope by design." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient> ;
+         fhir:reference [ fhir:v "CodeSystem/animal-nutrient" ]
+       ] ;
+       fhir:name [ fhir:v "Animal Nutrients (STUB)" ] ;
+       fhir:description [ fhir:v "STUB. Populate from the canonical nutrient list; map to SNOMED-vet / LOINC where possible. Ratio nutrients (e.g. Ca:P) need explicit handling, and non-linear ratios are excluded from the component model by design (see the [Animal Nutrient Adequacy Assessment](StructureDefinition-animal-nutrient-adequacy.html) profile). Which ratios count as non-linear is an open point on the [Decile Basis and Band Computation](band-computation.html) page." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/animal-nutrient-vs> ;
+         fhir:reference [ fhir:v "ValueSet/animal-nutrient-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Animal Nutrients Value Set" ] ;
+       fhir:description [ fhir:v "All codes in the Animal Nutrients code system (a stub in v0.1)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species> ;
+         fhir:reference [ fhir:v "CodeSystem/animal-species" ]
+       ] ;
+       fhir:name [ fhir:v "Animal Species (STUB)" ] ;
+       fhir:description [ fhir:v "STUB. v0.1 implemented coverage only. TODO: bind to an external species value set." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/animal-species-vs> ;
+         fhir:reference [ fhir:v "ValueSet/animal-species-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Animal Species Value Set" ] ;
+       fhir:description [ fhir:v "All codes in the Animal Species code system (a stub in v0.1)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/applied-requirement-standard> ;
+         fhir:reference [ fhir:v "StructureDefinition/applied-requirement-standard" ]
+       ] ;
+       fhir:name [ fhir:v "Applied Requirement Standard" ] ;
+       fhir:description [ fhir:v "Which published requirement standard the adequacy check was run against, by its edition's code when the edition is known (for example AAFCO-2026). A variable selection, never hardcoded into the check." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/caloric-restriction> ;
+         fhir:reference [ fhir:v "StructureDefinition/caloric-restriction" ]
+       ] ;
+       fhir:name [ fhir:v "Caloric Restriction" ] ;
+       fhir:description [ fhir:v "The intentional caloric restriction that the check was run under, as a\npercentage of the animal's energy need, in UCUM `%`: 25 means that the animal\nis fed 25% less energy than it needs. Most of the applied standard's per-Mcal\nminimums are then multiplied by 1 ÷ (1 − restriction ÷ 100) (under an AAFCO\nselection, together with any AAFCO dry matter factor), so a nutrient can be\n`deficient` although it meets the minimum that applies with no restriction.\nThe source template accepts 0 (none) or a number from 1 to 55. Present only\nfor a restriction above 0, and absent when none was entered (blank or 0 in the\ntemplate). An intake\nentered in place of the calculated energy requirement is not a restriction.\nNeither it nor the template's figure for how far it falls below that\nrequirement (cell N4 on the template's Standards tab) is recorded here. Which\nminimums are raised, and the rule that makes a value below them `deficient`,\nare stated, proposed and pending ratification, on the\n[Decile Basis and Band Computation](band-computation.html) page." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/Patient/ExampleCaninePatient> ;
+         fhir:reference [ fhir:v "Patient/ExampleCaninePatient" ]
+       ] ;
+       fhir:name [ fhir:v "Example canine patient" ] ;
+       fhir:description [ fhir:v "A dog, with species carried by the R5 patient-animal extension." ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/Device/ExampleAdequacyChecker> ;
+         fhir:reference [ fhir:v "Device/ExampleAdequacyChecker" ]
+       ] ;
+       fhir:name [ fhir:v "Example checking software" ] ;
+       fhir:description [ fhir:v "A placeholder for the software that computed the verdict, with its name and version." ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/Practitioner/ExampleVeterinarian> ;
+         fhir:reference [ fhir:v "Practitioner/ExampleVeterinarian" ]
+       ] ;
+       fhir:name [ fhir:v "Example veterinarian" ] ;
+       fhir:description [ fhir:v "A placeholder veterinarian who ran or reviewed the check." ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/nutrient-life-stage> ;
+         fhir:reference [ fhir:v "StructureDefinition/nutrient-life-stage" ]
+       ] ;
+       fhir:name [ fhir:v "Life Stage" ] ;
+       fhir:description [ fhir:v "The life stage whose requirements were applied (e.g. growth, adult maintenance). A variable selection." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/life-stage> ;
+         fhir:reference [ fhir:v "CodeSystem/life-stage" ]
+       ] ;
+       fhir:name [ fhir:v "Life Stages" ] ;
+       fhir:description [ fhir:v "Life stages for which requirement standards set nutrient requirements." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/life-stage-vs> ;
+         fhir:reference [ fhir:v "ValueSet/life-stage-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Life Stages Value Set" ] ;
+       fhir:description [ fhir:v "All codes in the Life Stages code system." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/maximum-provenance> ;
+         fhir:reference [ fhir:v "StructureDefinition/maximum-provenance" ]
+       ] ;
+       fhir:name [ fhir:v "Maximum Provenance" ] ;
+       fhir:description [ fhir:v "The kind of maximum a nutrient's range high is: AUTHORITATIVE (set by a standards body for the animal and the use it is applied\nto), CONDITIONAL (a standard's figure with a condition the check\ndoes not verify), TEMPLATE-SET (set or computed by the source template) or\nDERIVED-PROVISIONAL (computed by a disclosed rule from the minimum). Only a\nvalue above an authoritative maximum is `excess`. How the source template's\nmaximum types map to these codes is stated, proposed and pending ratification,\non the [Decile Basis and Band Computation](band-computation.html) page.\n\nDerived ceilings prioritize consistency and determinism, NOT toxicological\ncalibration, and are revisable by the governance body. This flag exists so a\nconsumer can see at a glance which ceilings are authoritative and which are\nnot." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/maximum-provenance-code> ;
+         fhir:reference [ fhir:v "CodeSystem/maximum-provenance-code" ]
+       ] ;
+       fhir:name [ fhir:v "Maximum Provenance Codes" ] ;
+       fhir:description [ fhir:v "The kind of maximum a nutrient's range high is, which decides whether a value above it can be `excess`: only an authoritative maximum can. How the source template's maximum types map to these codes is stated, proposed and pending ratification, under Maximum types on the [Decile Basis and Band Computation](band-computation.html) page." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/maximum-provenance-vs> ;
+         fhir:reference [ fhir:v "ValueSet/maximum-provenance-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Maximum Provenance Value Set" ] ;
+       fhir:description [ fhir:v "All codes in the Maximum Provenance Codes code system." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/nutrient-decile> ;
+         fhir:reference [ fhir:v "StructureDefinition/nutrient-decile" ]
+       ] ;
+       fhir:name [ fhir:v "Nutrient Decile (Common-Basis Expression)" ] ;
+       fhir:description [ fhir:v "The diet's level for this nutrient on the common mathematical basis used to compare across standards, expressed as a band of the Dynamic Decile System: four bands below the minimum and ten deciles from the minimum to the range high. Where an entry gets a band, a value above the range high is in range-d10 (Highest) unless it is below the minimum. The decile basis and band computation are stated on the [Decile Basis and Band Computation](band-computation.html) page, proposed and pending ratification by the governance body." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/nutrient-decile> ;
+         fhir:reference [ fhir:v "CodeSystem/nutrient-decile" ]
+       ] ;
+       fhir:name [ fhir:v "Nutrient Decile Bands" ] ;
+       fhir:description [ fhir:v "The 14 bands of the Dynamic Decile System: four bands below the requirement minimum, as a share of the minimum, and ten deciles from the minimum to the range high. Where an entry gets a band, a value above the range high is in range-d10 unless it is below the minimum. The computation is stated, proposed and pending ratification, on the [Decile Basis and Band Computation](band-computation.html) page." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/nutrient-decile-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nutrient-decile-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Nutrient Decile Bands Value Set" ] ;
+       fhir:description [ fhir:v "All codes in the Nutrient Decile Bands code system." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/oan-assessment-code> ;
+         fhir:reference [ fhir:v "CodeSystem/oan-assessment-code" ]
+       ] ;
+       fhir:name [ fhir:v "OAN Assessment Codes" ] ;
+       fhir:description [ fhir:v "Codes for the kind of assessment an Open Animal Nutrition observation records." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard> ;
+         fhir:reference [ fhir:v "CodeSystem/requirement-standard" ]
+       ] ;
+       fhir:name [ fhir:v "Requirement Standards" ] ;
+       fhir:description [ fhir:v "Published nutrient requirement standards an adequacy check can be run against. Each standards body's code has a child code for each edition (is-a); record the edition's code when the edition is known. The editions are those the source template, Version 21OCT26b, cites." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/requirement-standard-vs> ;
+         fhir:reference [ fhir:v "ValueSet/requirement-standard-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Requirement Standards Value Set" ] ;
+       fhir:description [ fhir:v "All codes in the Requirement Standards code system: the standards bodies and their editions." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] ) ;
+     fhir:page [
+       fhir:source [
+         a fhir:url ;
+         fhir:v "toc.html"^^xsd:anyURI
+       ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "index.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Open Animal Nutrition" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "band-computation.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "band-computation.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Decile Basis and Band Computation (proposed, pending ratification)" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "known-limitations.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "known-limitations.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Template Status and Known Limitations" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2026+" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "Pre-ratification draft" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "show-inherited-invariants" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "auto-oid-root" ]
+       ] ;
+       fhir:value [ fhir:v "2.16.840.1.113883.4.642.40.1004" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/assets" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid-template" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid-template" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp/pages" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "i18n-default-lang" ]
+       ] ;
+       fhir:value [ fhir:v "en" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

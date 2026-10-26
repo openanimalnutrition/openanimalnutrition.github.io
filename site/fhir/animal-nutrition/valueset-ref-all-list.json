@@ -1,0 +1,308 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "AllLanguages",
+    "title" : "All Languages",
+    "description" : "This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+    "systems" : ["urn:ietf:bcp:47"],
+    "oids" : ["2.16.840.1.113883.4.642.3.21"],
+    "sources" : ["2.16.840.1.113883.4.642.3.21"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/body-site",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "SNOMEDCTBodyStructures",
+    "title" : "SNOMED CT Body Structures",
+    "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.653",
+    "2.16.840.1.113883.4.642.2.78",
+    "2.16.840.1.113883.4.642.3.141"],
+    "sources" : ["2.16.840.1.113883.4.642.3.653",
+    "2.16.840.1.113883.4.642.2.78",
+    "2.16.840.1.113883.4.642.3.141"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "DataAbsentReason",
+    "title" : "Data Absent Reason",
+    "description" : "Used to specify why the normally expected content of the data element is missing.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+    "oids" : ["2.16.840.1.113883.4.642.3.5"],
+    "sources" : ["2.16.840.1.113883.4.642.3.5"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/languages",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "CommonLanguages",
+    "title" : "Common Languages",
+    "description" : "This value set includes common codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+    "systems" : ["urn:ietf:bcp:47"],
+    "oids" : ["2.16.840.1.113883.4.642.3.891",
+    "2.16.840.1.113883.4.642.3.20"],
+    "sources" : ["2.16.840.1.113883.4.642.3.891",
+    "2.16.840.1.113883.4.642.3.20"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "ObservationCategoryCodes",
+    "title" : "Observation Category Codes",
+    "description" : "Observation Category codes.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+    "oids" : ["2.16.840.1.113883.4.642.3.403",
+    "2.16.840.1.113883.4.642.2.222",
+    "2.16.840.1.113883.4.642.3.392"],
+    "sources" : ["2.16.840.1.113883.4.642.3.403",
+    "2.16.840.1.113883.4.642.2.222",
+    "2.16.840.1.113883.4.642.3.392"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "LOINCCodes",
+    "title" : "LOINC Codes",
+    "description" : "This value set includes all LOINC codes",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.2.216",
+    "2.16.840.1.113883.4.642.3.396",
+    "2.16.840.1.113883.4.642.3.383"],
+    "sources" : ["2.16.840.1.113883.4.642.2.216",
+    "2.16.840.1.113883.4.642.3.396",
+    "2.16.840.1.113883.4.642.3.383"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "ObservationMethods",
+    "title" : "Observation Methods",
+    "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.2.215",
+    "2.16.840.1.113883.4.642.3.395",
+    "2.16.840.1.113883.4.642.3.382"],
+    "sources" : ["2.16.840.1.113883.4.642.2.215",
+    "2.16.840.1.113883.4.642.3.395",
+    "2.16.840.1.113883.4.642.3.382"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "ObservationReferenceRangeNormalValueCodes",
+    "title" : "Observation Reference Range Normal Value Codes",
+    "description" : "Codes that describe the normal value in the reference range, such as “Negative” or “Absent”",
+    "systems" : ["http://hl7.org/fhir/observation-referencerange-normalvalue"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3264"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3264"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ObservationStatus",
+    "title" : "Observation Status",
+    "description" : "Codes providing the status of an observation.",
+    "systems" : ["http://hl7.org/fhir/observation-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.400",
+    "2.16.840.1.113883.4.642.3.387",
+    "2.16.840.1.113883.4.642.2.219"],
+    "sources" : ["2.16.840.1.113883.4.642.3.400",
+    "2.16.840.1.113883.4.642.3.387",
+    "2.16.840.1.113883.4.642.2.219"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-triggeredbytype",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "TriggeredBytype",
+    "title" : "triggered Bytype",
+    "description" : "Codes providing the type of triggeredBy observation.",
+    "systems" : ["http://hl7.org/fhir/observation-triggeredbytype"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3265"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3265"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "QuantityComparator",
+    "title" : "QuantityComparator",
+    "description" : "How the Quantity should be understood and represented.",
+    "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+    "oids" : ["2.16.840.1.113883.4.642.3.59"],
+    "sources" : ["2.16.840.1.113883.4.642.3.59"],
+    "uses" : {
+    },
+    "StructureDefinition-caloric-restriction.html" : "Caloric Restriction"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "ObservationReferenceRangeAppliesToCodes",
+    "title" : "Observation Reference Range Applies To Codes",
+    "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Race",
+    "http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.407",
+    "2.16.840.1.113883.4.642.3.396"],
+    "sources" : ["2.16.840.1.113883.4.642.3.407",
+    "2.16.840.1.113883.4.642.3.396"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "ObservationReferenceRangeMeaningCodes",
+    "title" : "Observation Reference Range Meaning Codes",
+    "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/referencerange-meaning"],
+    "oids" : ["2.16.840.1.113883.4.642.3.397",
+    "2.16.840.1.113883.4.642.2.217",
+    "2.16.840.1.113883.4.642.3.384"],
+    "sources" : ["2.16.840.1.113883.4.642.3.397",
+    "2.16.840.1.113883.4.642.2.217",
+    "2.16.840.1.113883.4.642.3.384"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/adequacy-interpretation-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AdequacyInterpretationVS",
+    "title" : "Adequacy Interpretation Value Set",
+    "description" : "All codes in the Adequacy Interpretation code system.",
+    "systems" : ["https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/adequacy-interpretation"],
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.48.1"],
+    "sources" : ["2.16.840.1.113883.4.642.40.1004.48.1"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/animal-nutrient-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AnimalNutrientVS",
+    "title" : "Animal Nutrients Value Set",
+    "description" : "All codes in the Animal Nutrients code system (a stub in v0.1).",
+    "systems" : ["https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient"],
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.48.2"],
+    "sources" : ["2.16.840.1.113883.4.642.40.1004.48.2"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/animal-species-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AnimalSpeciesVS",
+    "title" : "Animal Species Value Set",
+    "description" : "All codes in the Animal Species code system (a stub in v0.1).",
+    "systems" : ["https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species"],
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.48.3"],
+    "sources" : ["2.16.840.1.113883.4.642.40.1004.48.3"]
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/life-stage-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "LifeStageVS",
+    "title" : "Life Stages Value Set",
+    "description" : "All codes in the Life Stages code system.",
+    "systems" : ["https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/life-stage"],
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.48.4"],
+    "sources" : ["2.16.840.1.113883.4.642.40.1004.48.4"],
+    "uses" : {
+    },
+    "StructureDefinition-nutrient-life-stage.html" : "Life Stage"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/maximum-provenance-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "MaximumProvenanceVS",
+    "title" : "Maximum Provenance Value Set",
+    "description" : "All codes in the Maximum Provenance Codes code system.",
+    "systems" : ["https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/maximum-provenance-code"],
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.48.5"],
+    "sources" : ["2.16.840.1.113883.4.642.40.1004.48.5"],
+    "uses" : {
+    },
+    "StructureDefinition-maximum-provenance.html" : "Maximum Provenance"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/nutrient-decile-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NutrientDecileVS",
+    "title" : "Nutrient Decile Bands Value Set",
+    "description" : "All codes in the Nutrient Decile Bands code system.",
+    "systems" : ["https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/nutrient-decile"],
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.48.6"],
+    "sources" : ["2.16.840.1.113883.4.642.40.1004.48.6"],
+    "uses" : {
+    },
+    "StructureDefinition-nutrient-decile.html" : "Nutrient Decile (Common-Basis Expression)"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/requirement-standard-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "RequirementStandardVS",
+    "title" : "Requirement Standards Value Set",
+    "description" : "All codes in the Requirement Standards code system: the standards bodies and their editions.",
+    "systems" : ["https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard"],
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.48.7"],
+    "sources" : ["2.16.840.1.113883.4.642.40.1004.48.7"],
+    "uses" : {
+    },
+    "StructureDefinition-applied-requirement-standard.html" : "Applied Requirement Standard"
+  }]
+}

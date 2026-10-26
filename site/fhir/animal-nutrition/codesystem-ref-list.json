@@ -1,0 +1,86 @@
+{
+  "codeSystems" : [{
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/adequacy-interpretation",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AdequacyInterpretationCS",
+    "title" : "Adequacy Interpretation",
+    "description" : "Per-nutrient and overall interpretations of a diet's nutrient levels against the applied requirement standard. The rules for `deficient` and `excess` are stated, proposed and pending ratification, on the [Decile Basis and Band Computation](band-computation.html) page.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.16.1"],
+    "uses" : {
+    },
+    "ValueSet-adequacy-interpretation-vs.html" : "Adequacy Interpretation Value Set"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AnimalNutrientCS",
+    "title" : "Animal Nutrients (STUB)",
+    "description" : "STUB. Populate from the canonical nutrient list; map to SNOMED-vet / LOINC where possible. Ratio nutrients (e.g. Ca:P) need explicit handling, and non-linear ratios are excluded from the component model by design (see the [Animal Nutrient Adequacy Assessment](StructureDefinition-animal-nutrient-adequacy.html) profile). Which ratios count as non-linear is an open point on the [Decile Basis and Band Computation](band-computation.html) page.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.16.2"],
+    "uses" : {
+    },
+    "ValueSet-animal-nutrient-vs.html" : "Animal Nutrients Value Set"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AnimalSpeciesCS",
+    "title" : "Animal Species (STUB)",
+    "description" : "STUB. v0.1 implemented coverage only. TODO: bind to an external species value set.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.16.3"],
+    "uses" : {
+    },
+    "ValueSet-animal-species-vs.html" : "Animal Species Value Set"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/life-stage",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "LifeStageCS",
+    "title" : "Life Stages",
+    "description" : "Life stages for which requirement standards set nutrient requirements.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.16.4"],
+    "uses" : {
+    },
+    "ValueSet-life-stage-vs.html" : "Life Stages Value Set"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/maximum-provenance-code",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "MaximumProvenanceCS",
+    "title" : "Maximum Provenance Codes",
+    "description" : "The kind of maximum a nutrient's range high is, which decides whether a value above it can be `excess`: only an authoritative maximum can. How the source template's maximum types map to these codes is stated, proposed and pending ratification, under Maximum types on the [Decile Basis and Band Computation](band-computation.html) page.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.16.5"],
+    "uses" : {
+    },
+    "ValueSet-maximum-provenance-vs.html" : "Maximum Provenance Value Set"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/nutrient-decile",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NutrientDecileCS",
+    "title" : "Nutrient Decile Bands",
+    "description" : "The 14 bands of the Dynamic Decile System: four bands below the requirement minimum, as a share of the minimum, and ten deciles from the minimum to the range high. Where an entry gets a band, a value above the range high is in range-d10 unless it is below the minimum. The computation is stated, proposed and pending ratification, on the [Decile Basis and Band Computation](band-computation.html) page.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.16.6"],
+    "uses" : {
+    },
+    "ValueSet-nutrient-decile-vs.html" : "Nutrient Decile Bands Value Set"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "RequirementStandardCS",
+    "title" : "Requirement Standards",
+    "description" : "Published nutrient requirement standards an adequacy check can be run against. Each standards body's code has a child code for each edition (is-a); record the edition's code when the edition is known. The editions are those the source template, Version 21OCT26b, cites.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.16.8"],
+    "uses" : {
+    },
+    "ValueSet-requirement-standard-vs.html" : "Requirement Standards Value Set"
+  }]
+}
