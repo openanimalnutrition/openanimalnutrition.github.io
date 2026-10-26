@@ -1,0 +1,162 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://openanimalnutrition.org/fhir/animal-nutrition/Observation/ExampleAdultMaintenanceAdequacy> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleAdultMaintenanceAdequacy"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/animal-nutrient-adequacy"^^xsd:anyURI ;
+       fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/animal-nutrient-adequacy>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleAdultMaintenanceAdequacy</b></p><a name=\"ExampleAdultMaintenanceAdequacy\"> </a><a name=\"hcExampleAdultMaintenanceAdequacy\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-animal-nutrient-adequacy.html\">Animal Nutrient Adequacy Assessment</a></p></div><p><b>Applied Requirement Standard</b>: <span title=\"Codes:{https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard AAFCO-2026}\">AAFCO 2026</span></p><p><b>Life Stage</b>: <span title=\"Codes:{https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/life-stage adult-maintenance}\">Adult maintenance</span></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/oan-assessment-code diet-adequacy}\">Diet nutrient adequacy assessment</span></p><p><b>subject</b>: <a href=\"Patient-ExampleCaninePatient.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>effective</b>: 2026-06-21</p><p><b>performer</b>: <a href=\"Practitioner-ExampleVeterinarian.html\">Example Veterinarian</a></p><p><b>interpretation</b>: <span title=\"Codes:{https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/adequacy-interpretation complete-balanced}\">Overall: complete and balanced</span></p><p><b>device</b>: <a href=\"Device-ExampleAdequacyChecker.html\">Device</a></p><blockquote><p><b>component</b></p><p><b>Maximum Provenance</b>: authoritative</p><p><b>Nutrient Decile (Common-Basis Expression)</b>: range-d2</p><p><b>code</b>: <span title=\"Codes:{https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient calcium}\">Calcium</span></p><p><b>value</b>: 2 g/Mcal<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/Mcal = 'g/Mcal')</span></p><p><b>interpretation</b>: <span title=\"Codes:{https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/adequacy-interpretation adequate}\">Meets the requirement</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>1.25 g/Mcal<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/Mcal = 'g/Mcal')</span></td><td>6.25 g/Mcal<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/Mcal = 'g/Mcal')</span></td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>Maximum Provenance</b>: derived-provisional</p><p><b>Nutrient Decile (Common-Basis Expression)</b>: range-d3</p><p><b>code</b>: <span title=\"Codes:{https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient potassium}\">Potassium</span></p><p><b>value</b>: 2.5 g/Mcal<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/Mcal = 'g/Mcal')</span></p><p><b>interpretation</b>: <span title=\"Codes:{https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/adequacy-interpretation adequate}\">Meets the requirement</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>1.5 g/Mcal<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/Mcal = 'g/Mcal')</span></td><td>6 g/Mcal<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/Mcal = 'g/Mcal')</span></td></tr></table></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/applied-requirement-standard"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AAFCO-2026" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/nutrient-life-stage"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/life-stage"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "adult-maintenance" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/oan-assessment-code"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "diet-adequacy" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/Patient/ExampleCaninePatient> ;
+     fhir:reference [ fhir:v "Patient/ExampleCaninePatient" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2026-06-21"^^xsd:date
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/Practitioner/ExampleVeterinarian> ;
+     fhir:reference [ fhir:v "Practitioner/ExampleVeterinarian" ]
+  ] ) ; # 
+  fhir:interpretation ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/adequacy-interpretation"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "complete-balanced" ]
+     ] )
+  ] ) ; # 
+  fhir:device [
+     fhir:link <https://openanimalnutrition.org/fhir/animal-nutrition/Device/ExampleAdequacyChecker> ;
+     fhir:reference [ fhir:v "Device/ExampleAdequacyChecker" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/maximum-provenance"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "authoritative"
+       ]
+     ] [
+       fhir:url [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/nutrient-decile"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "range-d2"
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "calcium" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "g/Mcal" ]
+     ] ;
+     fhir:interpretation ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/adequacy-interpretation"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "adequate" ]
+       ] )
+     ] ) ;
+     fhir:referenceRange ( [
+       fhir:low [
+         fhir:value [ fhir:v 1.25 ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "g/Mcal" ]
+       ] ;
+       fhir:high [
+         fhir:value [ fhir:v 6.25 ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "g/Mcal" ]
+       ]
+     ] )
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/maximum-provenance"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "derived-provisional"
+       ]
+     ] [
+       fhir:url [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/StructureDefinition/nutrient-decile"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "range-d3"
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "potassium" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 2.5 ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "g/Mcal" ]
+     ] ;
+     fhir:interpretation ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/adequacy-interpretation"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "adequate" ]
+       ] )
+     ] ) ;
+     fhir:referenceRange ( [
+       fhir:low [
+         fhir:value [ fhir:v 1.5 ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "g/Mcal" ]
+       ] ;
+       fhir:high [
+         fhir:value [ fhir:v "6"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "g/Mcal" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

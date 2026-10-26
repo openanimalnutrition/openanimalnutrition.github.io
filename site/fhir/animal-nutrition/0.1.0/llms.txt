@@ -1,0 +1,55 @@
+# openanimalnutrition.fhir.animalnutrition#0.1.0: Open Animal Nutrition — Adequacy Interoperability Guide(en)
+
+## Pages
+
+* [Open Animal Nutrition](en/index.md)
+* [Decile Basis and Band Computation (proposed, pending ratification)](en/band-computation.md)
+* [Template Status and Known Limitations](en/known-limitations.md)
+* [Artifacts Summary](en/artifacts.md)
+
+## Resources
+
+### CodeSystems
+
+* [Adequacy Interpretation](en/CodeSystem-adequacy-interpretation.md)
+* [Animal Nutrients (STUB)](en/CodeSystem-animal-nutrient.md)
+* [Animal Species (STUB)](en/CodeSystem-animal-species.md)
+* [Life Stages](en/CodeSystem-life-stage.md)
+* [Maximum Provenance Codes](en/CodeSystem-maximum-provenance-code.md)
+* [Nutrient Decile Bands](en/CodeSystem-nutrient-decile.md)
+* [OAN Assessment Codes](en/CodeSystem-oan-assessment-code.md)
+* [Requirement Standards](en/CodeSystem-requirement-standard.md)
+
+### ValueSets
+
+* [Adequacy Interpretation Value Set](en/ValueSet-adequacy-interpretation-vs.md)
+* [Animal Nutrients Value Set](en/ValueSet-animal-nutrient-vs.md)
+* [Animal Species Value Set](en/ValueSet-animal-species-vs.md)
+* [Life Stages Value Set](en/ValueSet-life-stage-vs.md)
+* [Maximum Provenance Value Set](en/ValueSet-maximum-provenance-vs.md)
+* [Nutrient Decile Bands Value Set](en/ValueSet-nutrient-decile-vs.md)
+* [Requirement Standards Value Set](en/ValueSet-requirement-standard-vs.md)
+
+### Resource Profiles
+
+* [Animal Nutrient Adequacy Assessment](en/StructureDefinition-animal-nutrient-adequacy.md)
+
+### Extensions
+
+* [Applied Requirement Standard](en/StructureDefinition-applied-requirement-standard.md)
+* [Caloric Restriction](en/StructureDefinition-caloric-restriction.md)
+* [Maximum Provenance](en/StructureDefinition-maximum-provenance.md)
+* [Nutrient Decile (Common-Basis Expression)](en/StructureDefinition-nutrient-decile.md)
+* [Life Stage](en/StructureDefinition-nutrient-life-stage.md)
+
+### ImplementationGuides
+
+* [Open Animal Nutrition — Adequacy Interoperability Guide](en/ImplementationGuide-openanimalnutrition.fhir.animalnutrition.md)
+
+### Examples
+
+* [ExampleAdequacyChecker (Device)](en/Device-ExampleAdequacyChecker.md)
+* [ExampleAdultMaintenanceAdequacy (Observation)](en/Observation-ExampleAdultMaintenanceAdequacy.md)
+* [ExampleRestrictedMaintenanceAdequacy (Observation)](en/Observation-ExampleRestrictedMaintenanceAdequacy.md)
+* [ExampleCaninePatient (Patient)](en/Patient-ExampleCaninePatient.md)
+* [ExampleVeterinarian (Practitioner)](en/Practitioner-ExampleVeterinarian.md)

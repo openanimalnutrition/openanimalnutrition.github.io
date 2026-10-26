@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "life-stage",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem life-stage</b></p><a name=\"life-stage\"> </a><a name=\"hclife-stage\"> </a><p>This case-sensitive code system <code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/life-stage</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">growth<a name=\"life-stage-growth\"> </a></td><td>Growth</td></tr><tr><td style=\"white-space:nowrap\">gestation-lactation<a name=\"life-stage-gestation-lactation\"> </a></td><td>Gestation / Lactation</td></tr><tr><td style=\"white-space:nowrap\">adult-maintenance<a name=\"life-stage-adult-maintenance\"> </a></td><td>Adult maintenance</td></tr><tr><td style=\"white-space:nowrap\">all-life-stages<a name=\"life-stage-all-life-stages\"> </a></td><td>All life stages</td></tr></table></div>"
+  },
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/life-stage",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.1004.16.4"
+  }],
+  "version" : "0.1.0",
+  "name" : "LifeStageCS",
+  "title" : "Life Stages",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-10-26T20:14:00+00:00",
+  "publisher" : "DVM Consulting, Inc. (provisional steward)",
+  "contact" : [{
+    "name" : "DVM Consulting, Inc. (provisional steward)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openanimalnutrition.org"
+    }]
+  }],
+  "description" : "Life stages for which requirement standards set nutrient requirements.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "growth",
+    "display" : "Growth"
+  },
+  {
+    "code" : "gestation-lactation",
+    "display" : "Gestation / Lactation"
+  },
+  {
+    "code" : "adult-maintenance",
+    "display" : "Adult maintenance"
+  },
+  {
+    "code" : "all-life-stages",
+    "display" : "All life stages"
+  }]
+}

@@ -1,0 +1,33 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://openanimalnutrition.org/fhir/animal-nutrition/Patient/ExampleCaninePatient> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleCaninePatient"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient ExampleCaninePatient</b></p><a name=\"ExampleCaninePatient\"> </a><a name=\"hcExampleCaninePatient\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This patient is known to be an animal.\">Patient Animal:</td><td colspan=\"3\"><ul><li>species: <span title=\"Codes:{https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species canine}\">Dog (Canis lupus familiaris)</span></li></ul></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "species"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "canine" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-animal"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:gender [ fhir:v "female"] . # 
+
+# -------------------------------------------------------------------------------------
+

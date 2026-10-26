@@ -1,0 +1,46 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "animal-species",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem animal-species</b></p><a name=\"animal-species\"> </a><a name=\"hcanimal-species\"> </a><p>This case-sensitive code system <code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">canine<a name=\"animal-species-canine\"> </a></td><td>Dog (Canis lupus familiaris)</td></tr><tr><td style=\"white-space:nowrap\">feline<a name=\"animal-species-feline\"> </a></td><td>Cat (Felis catus)</td></tr></table></div>"
+  },
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.1004.16.3"
+  }],
+  "version" : "0.1.0",
+  "name" : "AnimalSpeciesCS",
+  "title" : "Animal Species (STUB)",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-10-26T20:13:21+00:00",
+  "publisher" : "DVM Consulting, Inc. (provisional steward)",
+  "contact" : [{
+    "name" : "DVM Consulting, Inc. (provisional steward)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openanimalnutrition.org"
+    }]
+  }],
+  "description" : "STUB. v0.1 implemented coverage only. TODO: bind to an external species value set.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "canine",
+    "display" : "Dog (Canis lupus familiaris)"
+  },
+  {
+    "code" : "feline",
+    "display" : "Cat (Felis catus)"
+  }]
+}

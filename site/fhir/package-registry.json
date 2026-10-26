@@ -1,1 +1,21 @@
-{ "packages" : [] }
+{
+  "packages" : [{
+    "path" : "animal-nutrition/package-list.json",
+    "package-id" : "openanimalnutrition.fhir.animalnutrition",
+    "title" : "Open Animal Nutrition — Adequacy Interoperability Guide",
+    "canonical" : "https://openanimalnutrition.org/fhir/animal-nutrition",
+    "category" : "Clinical Observations",
+    "ci-build" : "https://github.com/openanimalnutrition/animal-nutrition-ig",
+    "version-count" : 1,
+    "latest" : {
+      "version" : "0.1.0",
+      "date" : "2026-10-26",
+      "path" : "https://openanimalnutrition.org/fhir/animal-nutrition/0.1.0"
+    },
+    "milestone" : {
+      "version" : "0.1.0",
+      "date" : "2026-10-26",
+      "path" : "https://openanimalnutrition.org/fhir/animal-nutrition/0.1.0"
+    }
+  }]
+}

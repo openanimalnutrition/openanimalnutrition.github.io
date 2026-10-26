@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "requirement-standard"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem requirement-standard</b></p><a name=\"requirement-standard\"> </a><a name=\"hcrequirement-standard\"> </a><p>This case-sensitive code system <code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">NRC<a name=\"requirement-standard-NRC\"> </a></td><td>National Research Council</td><td>The nutrient requirements of dogs and cats published by the National Research Council, edition not stated.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  NRC-2006<a name=\"requirement-standard-NRC-2006\"> </a></td><td>NRC 2006</td><td>The 2006 NRC Nutrient Requirements of Dogs and Cats.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">AAFCO<a name=\"requirement-standard-AAFCO\"> </a></td><td>Association of American Feed Control Officials</td><td>The dog and cat food nutrient profiles published by the Association of American Feed Control Officials, edition not stated.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  AAFCO-2026<a name=\"requirement-standard-AAFCO-2026\"> </a></td><td>AAFCO 2026</td><td>The 2026 AAFCO Official Publication (Dog and Cat Food Nutrient Profiles).</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">FEDIAF<a name=\"requirement-standard-FEDIAF\"> </a></td><td>European Pet Food Industry Federation</td><td>The nutritional guidelines for cats and dogs published by the European Pet Food Industry Federation, edition not stated.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  FEDIAF-2025<a name=\"requirement-standard-FEDIAF-2025\"> </a></td><td>FEDIAF September 2025</td><td>The FEDIAF Nutritional Guidelines, September 2025.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.40.1004.16.8" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "RequirementStandardCS"] ; # 
+  fhir:title [ fhir:v "Requirement Standards"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-10-26T20:13:21+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DVM Consulting, Inc. (provisional steward)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DVM Consulting, Inc. (provisional steward)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://openanimalnutrition.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Published nutrient requirement standards an adequacy check can be run against. Each standards body's code has a child code for each edition (is-a); record the edition's code when the edition is known. The editions are those the source template, Version 21OCT26b, cites."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "NRC" ] ;
+     fhir:display [ fhir:v "National Research Council" ] ;
+     fhir:definition [ fhir:v "The nutrient requirements of dogs and cats published by the National Research Council, edition not stated." ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "NRC-2006" ] ;
+       fhir:display [ fhir:v "NRC 2006" ] ;
+       fhir:definition [ fhir:v "The 2006 NRC Nutrient Requirements of Dogs and Cats." ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "AAFCO" ] ;
+     fhir:display [ fhir:v "Association of American Feed Control Officials" ] ;
+     fhir:definition [ fhir:v "The dog and cat food nutrient profiles published by the Association of American Feed Control Officials, edition not stated." ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "AAFCO-2026" ] ;
+       fhir:display [ fhir:v "AAFCO 2026" ] ;
+       fhir:definition [ fhir:v "The 2026 AAFCO Official Publication (Dog and Cat Food Nutrient Profiles)." ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "FEDIAF" ] ;
+     fhir:display [ fhir:v "European Pet Food Industry Federation" ] ;
+     fhir:definition [ fhir:v "The nutritional guidelines for cats and dogs published by the European Pet Food Industry Federation, edition not stated." ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "FEDIAF-2025" ] ;
+       fhir:display [ fhir:v "FEDIAF September 2025" ] ;
+       fhir:definition [ fhir:v "The FEDIAF Nutritional Guidelines, September 2025." ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

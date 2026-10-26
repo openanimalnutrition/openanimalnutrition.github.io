@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nutrient-decile-vs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nutrient-decile-vs</b></p><a name=\"nutrient-decile-vs\"> </a><a name=\"hcnutrient-decile-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nutrient-decile.html\"><code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/nutrient-decile</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/nutrient-decile-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.1004.48.6"
+  }],
+  "version" : "0.1.0",
+  "name" : "NutrientDecileVS",
+  "title" : "Nutrient Decile Bands Value Set",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-10-26T20:14:00+00:00",
+  "publisher" : "DVM Consulting, Inc. (provisional steward)",
+  "contact" : [{
+    "name" : "DVM Consulting, Inc. (provisional steward)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openanimalnutrition.org"
+    }]
+  }],
+  "description" : "All codes in the Nutrient Decile Bands code system.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/nutrient-decile"
+    }]
+  }
+}

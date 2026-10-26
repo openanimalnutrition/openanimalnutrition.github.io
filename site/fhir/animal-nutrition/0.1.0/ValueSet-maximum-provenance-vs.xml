@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="maximum-provenance-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet maximum-provenance-vs</b></p><a name="maximum-provenance-vs"> </a><a name="hcmaximum-provenance-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-maximum-provenance-code.html"><code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/maximum-provenance-code</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/maximum-provenance-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.1004.48.5"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MaximumProvenanceVS"/>
+  <title value="Maximum Provenance Value Set"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-26T20:13:21+00:00"/>
+  <publisher value="DVM Consulting, Inc. (provisional steward)"/>
+  <contact>
+    <name value="DVM Consulting, Inc. (provisional steward)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openanimalnutrition.org"/>
+    </telecom>
+  </contact>
+  <description value="All codes in the Maximum Provenance Codes code system."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/maximum-provenance-code"/>
+    </include>
+  </compose>
+</ValueSet>

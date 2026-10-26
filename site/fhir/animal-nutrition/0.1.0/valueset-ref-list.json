@@ -1,0 +1,97 @@
+{
+  "codeSystems" : [{
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/adequacy-interpretation-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AdequacyInterpretationVS",
+    "title" : "Adequacy Interpretation Value Set",
+    "description" : "All codes in the Adequacy Interpretation code system.",
+    "systems" : ["https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/adequacy-interpretation"],
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.48.1"],
+    "sources" : ["2.16.840.1.113883.4.642.40.1004.48.1"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/animal-nutrient-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AnimalNutrientVS",
+    "title" : "Animal Nutrients Value Set",
+    "description" : "All codes in the Animal Nutrients code system (a stub in v0.1).",
+    "systems" : ["https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient"],
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.48.2"],
+    "sources" : ["2.16.840.1.113883.4.642.40.1004.48.2"],
+    "uses" : {
+    },
+    "StructureDefinition-animal-nutrient-adequacy.html" : "Animal Nutrient Adequacy Assessment"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/animal-species-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AnimalSpeciesVS",
+    "title" : "Animal Species Value Set",
+    "description" : "All codes in the Animal Species code system (a stub in v0.1).",
+    "systems" : ["https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species"],
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.48.3"],
+    "sources" : ["2.16.840.1.113883.4.642.40.1004.48.3"]
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/life-stage-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "LifeStageVS",
+    "title" : "Life Stages Value Set",
+    "description" : "All codes in the Life Stages code system.",
+    "systems" : ["https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/life-stage"],
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.48.4"],
+    "sources" : ["2.16.840.1.113883.4.642.40.1004.48.4"],
+    "uses" : {
+    },
+    "StructureDefinition-nutrient-life-stage.html" : "Life Stage"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/maximum-provenance-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "MaximumProvenanceVS",
+    "title" : "Maximum Provenance Value Set",
+    "description" : "All codes in the Maximum Provenance Codes code system.",
+    "systems" : ["https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/maximum-provenance-code"],
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.48.5"],
+    "sources" : ["2.16.840.1.113883.4.642.40.1004.48.5"],
+    "uses" : {
+    },
+    "StructureDefinition-maximum-provenance.html" : "Maximum Provenance"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/nutrient-decile-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NutrientDecileVS",
+    "title" : "Nutrient Decile Bands Value Set",
+    "description" : "All codes in the Nutrient Decile Bands code system.",
+    "systems" : ["https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/nutrient-decile"],
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.48.6"],
+    "sources" : ["2.16.840.1.113883.4.642.40.1004.48.6"],
+    "uses" : {
+    },
+    "StructureDefinition-nutrient-decile.html" : "Nutrient Decile (Common-Basis Expression)"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/requirement-standard-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "RequirementStandardVS",
+    "title" : "Requirement Standards Value Set",
+    "description" : "All codes in the Requirement Standards code system: the standards bodies and their editions.",
+    "systems" : ["https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard"],
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.48.7"],
+    "sources" : ["2.16.840.1.113883.4.642.40.1004.48.7"],
+    "uses" : {
+    },
+    "StructureDefinition-applied-requirement-standard.html" : "Applied Requirement Standard"
+  }]
+}

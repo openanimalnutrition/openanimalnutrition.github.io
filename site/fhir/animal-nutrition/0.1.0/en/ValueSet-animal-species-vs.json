@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "animal-species-vs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet animal-species-vs</b></p><a name=\"animal-species-vs\"> </a><a name=\"hcanimal-species-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-animal-species.html\"><code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ValueSet/animal-species-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.1004.48.3"
+  }],
+  "version" : "0.1.0",
+  "name" : "AnimalSpeciesVS",
+  "title" : "Animal Species Value Set",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-10-26T20:13:21+00:00",
+  "publisher" : "DVM Consulting, Inc. (provisional steward)",
+  "contact" : [{
+    "name" : "DVM Consulting, Inc. (provisional steward)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openanimalnutrition.org"
+    }]
+  }],
+  "description" : "All codes in the Animal Species code system (a stub in v0.1).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species"
+    }]
+  }
+}

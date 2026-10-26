@@ -1,0 +1,20 @@
+{
+  "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/ImplementationGuide/openanimalnutrition.fhir.animalnutrition",
+  "name" : "OpenAnimalNutrition",
+  "title" : "Open Animal Nutrition — Adequacy Interoperability Guide",
+  "description" : "A FHIR Implementation Guide for representing and verifying the nutritional adequacy of an animal diet against published requirement standards (NRC, AAFCO, FEDIAF), expressed on a common mathematical basis. Species-agnostic by design; v0.1 binds canine and feline coverage. This guide models the adequacy VERDICT, not the means of producing a passing diet.",
+  "status" : "draft",
+  "package-id" : "openanimalnutrition.fhir.animalnutrition",
+  "ig-ver" : "0.1.0",
+  "date" : "Mon, 26 Oct, 2026 20:14:00 +0000",
+  "dateISO8601" : "2026-10-26T20:14:00+00:00",
+  "errs" : 0,
+  "warnings" : 0,
+  "hints" : 47,
+  "broken-links" : 0,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 3,
+  "version" : "5.0.0",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 1485290712
+}

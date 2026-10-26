@@ -1,0 +1,172 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/observation-referencerange-normalvalue",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ObservationReferenceRangeNormalValue",
+    "title" : "ObservationreferenceRangeNormalValue",
+    "description" : "Codes that describe the normal value in the reference range.",
+    "oids" : ["2.16.840.1.113883.4.642.4.2099"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-observation-referencerange-normalvalue.html" : "Observation Reference Range Normal Value Codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/observation-status",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ObservationStatus",
+    "title" : "Observation Status",
+    "description" : "Codes providing the status of an observation.",
+    "oids" : ["2.16.840.1.113883.4.642.4.401",
+    "2.16.840.1.113883.4.642.1.388",
+    "2.16.840.1.113883.4.642.2.219"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-observation-status.html" : "Observation Status"
+  },
+  {
+    "url" : "http://hl7.org/fhir/observation-triggeredbytype",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "TriggeredBytype",
+    "title" : "triggered Bytype",
+    "description" : "Codes providing the triggeredBy type of observation.",
+    "oids" : ["2.16.840.1.113883.4.642.4.2098"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-observation-triggeredbytype.html" : "triggered Bytype"
+  },
+  {
+    "url" : "http://hl7.org/fhir/quantity-comparator",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "QuantityComparator",
+    "title" : "QuantityComparator",
+    "description" : "How the Quantity should be understood and represented.",
+    "oids" : ["2.16.840.1.113883.4.642.4.60"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-quantity-comparator.html" : "QuantityComparator"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "DataAbsentReason",
+    "title" : "DataAbsentReason",
+    "description" : "Used to specify why the normally expected content of the data element is missing.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1048"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-data-absent-reason.html" : "Data Absent Reason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ObservationCategoryCodes",
+    "title" : "Observation Category Codes",
+    "description" : "Observation Category codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-observation-category.html" : "Observation Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ObservationReferenceRangeMeaningCodes",
+    "title" : "Observation Reference Range Meaning Codes",
+    "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1124"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/adequacy-interpretation",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AdequacyInterpretationCS",
+    "title" : "Adequacy Interpretation",
+    "description" : "Per-nutrient and overall interpretations of a diet's nutrient levels against the applied requirement standard. The rules for `deficient` and `excess` are stated, proposed and pending ratification, on the [Decile Basis and Band Computation](band-computation.html) page.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.16.1"],
+    "uses" : {
+    },
+    "ValueSet-adequacy-interpretation-vs.html" : "Adequacy Interpretation Value Set"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AnimalNutrientCS",
+    "title" : "Animal Nutrients (STUB)",
+    "description" : "STUB. Populate from the canonical nutrient list; map to SNOMED-vet / LOINC where possible. Ratio nutrients (e.g. Ca:P) need explicit handling, and non-linear ratios are excluded from the component model by design (see the [Animal Nutrient Adequacy Assessment](StructureDefinition-animal-nutrient-adequacy.html) profile). Which ratios count as non-linear is an open point on the [Decile Basis and Band Computation](band-computation.html) page.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.16.2"],
+    "uses" : {
+    },
+    "ValueSet-animal-nutrient-vs.html" : "Animal Nutrients Value Set"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-species",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AnimalSpeciesCS",
+    "title" : "Animal Species (STUB)",
+    "description" : "STUB. v0.1 implemented coverage only. TODO: bind to an external species value set.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.16.3"],
+    "uses" : {
+    },
+    "ValueSet-animal-species-vs.html" : "Animal Species Value Set"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/life-stage",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "LifeStageCS",
+    "title" : "Life Stages",
+    "description" : "Life stages for which requirement standards set nutrient requirements.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.16.4"],
+    "uses" : {
+    },
+    "ValueSet-life-stage-vs.html" : "Life Stages Value Set"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/maximum-provenance-code",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "MaximumProvenanceCS",
+    "title" : "Maximum Provenance Codes",
+    "description" : "The kind of maximum a nutrient's range high is, which decides whether a value above it can be `excess`: only an authoritative maximum can. How the source template's maximum types map to these codes is stated, proposed and pending ratification, under Maximum types on the [Decile Basis and Band Computation](band-computation.html) page.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.16.5"],
+    "uses" : {
+    },
+    "ValueSet-maximum-provenance-vs.html" : "Maximum Provenance Value Set"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/nutrient-decile",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "NutrientDecileCS",
+    "title" : "Nutrient Decile Bands",
+    "description" : "The 14 bands of the Dynamic Decile System: four bands below the requirement minimum, as a share of the minimum, and ten deciles from the minimum to the range high. Where an entry gets a band, a value above the range high is in range-d10 unless it is below the minimum. The computation is stated, proposed and pending ratification, on the [Decile Basis and Band Computation](band-computation.html) page.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.16.6"],
+    "uses" : {
+    },
+    "ValueSet-nutrient-decile-vs.html" : "Nutrient Decile Bands Value Set"
+  },
+  {
+    "url" : "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/requirement-standard",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "RequirementStandardCS",
+    "title" : "Requirement Standards",
+    "description" : "Published nutrient requirement standards an adequacy check can be run against. Each standards body's code has a child code for each edition (is-a); record the edition's code when the edition is known. The editions are those the source template, Version 21OCT26b, cites.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1004.16.8"],
+    "uses" : {
+    },
+    "ValueSet-requirement-standard-vs.html" : "Requirement Standards Value Set"
+  }]
+}

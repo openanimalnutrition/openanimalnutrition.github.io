@@ -1,0 +1,25 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://openanimalnutrition.org/fhir/animal-nutrition/Device/ExampleAdequacyChecker> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleAdequacyChecker"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device ExampleAdequacyChecker</b></p><a name=\"ExampleAdequacyChecker\"> </a><a name=\"hcExampleAdequacyChecker\"> </a><h3>Names</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Example Adequacy Checker</td><td>User Friendly name</td></tr></table><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>1.0.0</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:name ( [
+     fhir:value [ fhir:v "Example Adequacy Checker" ] ;
+     fhir:type [ fhir:v "user-friendly-name" ]
+  ] ) ; # 
+  fhir:version ( [
+     fhir:value [ fhir:v "1.0.0" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

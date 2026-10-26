@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "animal-nutrient"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem animal-nutrient</b></p><a name=\"animal-nutrient\"> </a><a name=\"hcanimal-nutrient\"> </a><p>This case-sensitive code system <code>https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">protein<a name=\"animal-nutrient-protein\"> </a></td><td>Crude protein</td></tr><tr><td style=\"white-space:nowrap\">calcium<a name=\"animal-nutrient-calcium\"> </a></td><td>Calcium</td></tr><tr><td style=\"white-space:nowrap\">phosphorus<a name=\"animal-nutrient-phosphorus\"> </a></td><td>Phosphorus</td></tr><tr><td style=\"white-space:nowrap\">potassium<a name=\"animal-nutrient-potassium\"> </a></td><td>Potassium</td></tr><tr><td style=\"white-space:nowrap\">ca-p-ratio<a name=\"animal-nutrient-ca-p-ratio\"> </a></td><td>Calcium:Phosphorus ratio</td></tr><tr><td style=\"white-space:nowrap\">vitamin-d<a name=\"animal-nutrient-vitamin-d\"> </a></td><td>Vitamin D</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://openanimalnutrition.org/fhir/animal-nutrition/CodeSystem/animal-nutrient"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.40.1004.16.2" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "AnimalNutrientCS"] ; # 
+  fhir:title [ fhir:v "Animal Nutrients (STUB)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-10-26T20:13:21+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DVM Consulting, Inc. (provisional steward)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DVM Consulting, Inc. (provisional steward)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://openanimalnutrition.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "STUB. Populate from the canonical nutrient list; map to SNOMED-vet / LOINC where possible. Ratio nutrients (e.g. Ca:P) need explicit handling, and non-linear ratios are excluded from the component model by design (see the [Animal Nutrient Adequacy Assessment](StructureDefinition-animal-nutrient-adequacy.html) profile). Which ratios count as non-linear is an open point on the [Decile Basis and Band Computation](band-computation.html) page."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "protein" ] ;
+     fhir:display [ fhir:v "Crude protein" ]
+  ] [
+     fhir:code [ fhir:v "calcium" ] ;
+     fhir:display [ fhir:v "Calcium" ]
+  ] [
+     fhir:code [ fhir:v "phosphorus" ] ;
+     fhir:display [ fhir:v "Phosphorus" ]
+  ] [
+     fhir:code [ fhir:v "potassium" ] ;
+     fhir:display [ fhir:v "Potassium" ]
+  ] [
+     fhir:code [ fhir:v "ca-p-ratio" ] ;
+     fhir:display [ fhir:v "Calcium:Phosphorus ratio" ]
+  ] [
+     fhir:code [ fhir:v "vitamin-d" ] ;
+     fhir:display [ fhir:v "Vitamin D" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
