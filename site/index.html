@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="same-origin">
+<meta name="description" content="One open way to check a dog or cat diet against the published nutrient requirements: the same result, in the same words, for every person and every AI that uses it.">
+<title>Open Animal Nutrition</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site-header">
+<p><a class="site-name" href="/">Open Animal Nutrition</a></p>
+</header>
+<main>
+<h1>Open Animal Nutrition</h1>
+<p class="lead">One open way to check a dog or cat diet against the published nutrient requirements:
+the same result, in the same words, for every person and every AI that uses it.</p>
+<ul class="buttons">
+<li><a class="button" href="https://checker.openanimalnutrition.org/">Open the checker</a></li>
+<li><a class="button" href="/fhir/animal-nutrition/">Read the Implementation Guide</a></li>
+<li><a class="button" href="#help-govern-it">Help govern it</a></li>
+</ul>
+<section class="status" aria-label="Status">
+<p><strong>Proposed, pending ratification.</strong> The rules are the provisional steward's proposal.
+We are inviting veterinary nutrition experts to form the governance body that will
+ratify, change or reject them.</p>
+</section>
+
+<h2 id="why-it-exists">Why it exists</h2>
+<p>Diets for companion animals, especially dogs and cats, are formulated by animal caretakers,
+veterinarians, animal nutritionists, veterinary nutritionists, and companies, and, more and
+more often, suggested by AI assistants, whose recommendations are not always accurate.
+Whether a diet meets a requirement comes down to comparing its nutrient concentrations with a
+standard's figures: the NRC's, AAFCO's, or FEDIAF's. That comparison is easy to get wrong, by
+hand or by a model working from memory, and the standards give minimums and maximums, not
+names for where a concentration lies between them.</p>
+<p>Open Animal Nutrition writes the comparison down as one open computation, so that a diet
+checked by anyone, with any tool that follows it, gets the same result.</p>
+
+<h2 id="how-it-works">How it works</h2>
+<ol>
+<li>Choose one requirement: one of 21 from the 2006 NRC <cite>Nutrient Requirements of Dogs and
+Cats</cite>, the 2026 AAFCO <cite>Official Publication</cite> and the FEDIAF <cite>Nutritional Guidelines</cite> of
+September 2025. Future standards can be added as published or needed, including from other
+jurisdictions.</li>
+<li>Enter the diet's nutrient values and, where the requirement uses them, facts about the
+animal, such as its body weight and life stage.</li>
+<li>For each nutrient, the checker reports where the value lies among the 14 bands of the
+Dynamic Decile System, from "Very Severely Restricted (&lt;25% of Min)" to "Highest (90% of
+Range or Greater)", and a proposed verdict: <code>deficient</code>, <code>excess</code> or none.</li>
+</ol>
+<p>Every maximum is labelled by kind, and only a value above a maximum that a standards body set
+for that animal and use is called <code>excess</code>. Where a standard gives no maximum, the range high
+is set or computed by a disclosed rule, most often four times the minimum, for consistency,
+not as a toxicity limit.</p>
+<p>Every result first says what it is not: not a safety or compliance assessment, and not
+veterinary advice. Only the nutrients entered are checked.</p>
+
+<h2 id="why-shared-words-matter">Why shared words matter</h2>
+<p>The standards state their figures in different ways (per unit of energy, of dry matter or of
+body weight) and set different minimums and maximums. Two people comparing the same diet with
+the same standard can still describe the result differently: "low", "marginal",
+"borderline".</p>
+<p>The Dynamic Decile System puts every nutrient concentration on one scale, four bands below the
+minimum and ten deciles of the span from the minimum to the range high (the last also takes
+values above it), and gives each band one name. "Slightly Restricted (75 to &lt;100% of Min)" or
+"Near Highest (80 to &lt;90% of Range)" names the same position against the selected standard's
+limits in every report, for every standard and to every reader; it is a position, not a
+judgment of safety. That shared vocabulary lets people compare diets, standards and
+recommendations like for like.</p>
+<p>It matters even more for AI. A language model may not have a standard's figures in its
+training data, may recall them imprecisely, and can answer the same question differently
+each time. Through the checker's MCP connector (the standard way for AI assistants to call
+outside tools), an assistant sends a diet's values to the same computation a person uses and
+gets back the same result every time: each nutrient's band, its verdict, and the conditions
+the verdict depends on, in the system's own words. The checker grounds the assistant in a
+computation instead of its memory; it does not replace the judgment of the veterinarian or
+nutritionist using it.</p>
+
+<h2 id="help-govern-it">Help govern it</h2>
+<p>The rules are a proposal. They become a standard only when independent experts have checked,
+challenged, and ratified them. The Dynamic Decile System table was reviewed by the steward's
+advisory board and, informally, by more than 60 board-certified veterinary nutritionists and
+nutrition residents. Those reviews were of versions up to September 2025; neither group has
+reviewed the changes made since, including new inputs, several changed limits and the
+checker's own rules.</p>
+<p><strong>Who we are inviting:</strong> board-certified veterinary nutritionists (ACVIM Nutrition, ECVCN),
+members of the AAVN, nutrition residents, animal nutrition scientists, and other groups of
+veterinary nutrition experts.</p>
+<p><strong>What the body decides first:</strong></p>
+<ol>
+<li>the common basis: the Dynamic Decile System's bands;</li>
+<li>the rule for maximums where a standard sets none;</li>
+<li>the rules by which a nutrient's concentration and limits give its verdict;</li>
+</ol>
+<p>and then how the project is hosted and funded, and whether to accept transfer of the domain,
+the GitHub organization and the hosting account from the provisional steward. The guide also
+lists the points still open and the conflicts found in applying the standards' figures, for
+the body to resolve.</p>
+<p><strong>What it takes:</strong> no programming. The first questions are nutritional; the later ones
+(hosting, funding, transfer) are decisions, not technical work. The computation and its rules
+are written out in plain language, and every change from the template is listed with its
+reason. AI-powered assistance can help with most technical issues that may involve GitHub,
+code, hosting, and documentation.</p>
+<p class="callout"><strong>To take part</strong>, or to suggest someone, please email
+<a href="mailto:openanimalnutrition@dvmconsulting.com">openanimalnutrition@dvmconsulting.com</a>.
+Please pass this page on to colleagues who should be part of it.</p>
+
+<h2 id="where-to-find-things">Where to find things</h2>
+<table class="stack">
+<thead><tr><th scope="col">What</th><th scope="col">Where</th></tr></thead>
+<tbody>
+<tr><th scope="row">The checker: enter a diet, get the result</th>
+<td data-label="Where"><a href="https://checker.openanimalnutrition.org/">checker.openanimalnutrition.org</a> (<a href="https://checker.openanimalnutrition.org/about">About and privacy</a>)</td></tr>
+<tr><th scope="row">Use it with an AI assistant</th>
+<td data-label="Where">Add <code>https://checker.openanimalnutrition.org/mcp</code> as an MCP connector or plugin or custom connected app (no sign-in)</td></tr>
+<tr><th scope="row">The Implementation Guide: the specification, in FHIR (the international technical standard for exchanging health-care data that openanimalnutrition.org follows), with the computation written out</th>
+<td data-label="Where"><a href="/fhir/animal-nutrition/">openanimalnutrition.org/fhir/animal-nutrition</a> (draft)</td></tr>
+<tr><th scope="row">The checker's rules that differ from the template, with their reasons</th>
+<td data-label="Where"><a href="https://github.com/openanimalnutrition/animal-nutrition-checker/blob/main/docs/changes-from-21OCT26b.md">Changes document</a></td></tr>
+<tr><th scope="row">Governance and the steward's disclosure of interest</th>
+<td data-label="Where"><a href="https://github.com/openanimalnutrition/animal-nutrition-ig/blob/main/GOVERNANCE.md">GOVERNANCE.md</a></td></tr>
+<tr><th scope="row">Challenge a rule or report an error (public)</th>
+<td data-label="Where"><a href="https://github.com/openanimalnutrition/animal-nutrition-checker/issues/new/choose">Issue forms</a>; without a GitHub account, email <a href="mailto:admin+oan@dvmconsulting.com">admin+oan@dvmconsulting.com</a>, and the steward files it as a public issue</td></tr>
+<tr><th scope="row">Code and data (CC0)</th>
+<td data-label="Where"><a href="https://github.com/openanimalnutrition">github.com/openanimalnutrition</a></td></tr>
+<tr><th scope="row">An informal podcast introducing the Dynamic Decile System to pet food nutrition experts</th>
+<td data-label="Where"><a href="https://episodes.wisenetix.com/blog/Pet-Nutrition-Standards-Explained">Intro Podcast</a></td></tr>
+</tbody>
+</table>
+
+<h2 id="who-runs-it-now">Who runs it now</h2>
+<p>The provisional steward is Davis Veterinary Medical (DVM) Consulting, Inc., a California
+Certified B Corporation; Sean Delaney, BS, DVM, MS, DACVIM (Nutrition), acts for it. It sells
+nutritional supplements and offers free diet formulation software that implements this
+standard; Sean Delaney is the lead co-editor of <cite>Applied Veterinary Clinical Nutrition</cite>, 2nd
+edition, and an author of two other works the checker cites
+(<a href="https://github.com/openanimalnutrition/animal-nutrition-ig/blob/main/GOVERNANCE.md">disclosure of interest</a>).
+The computation references no product, ingredient, supplement or vendor. DVM Consulting pays
+for the domain and hosting until a governance body decides how the project is hosted and
+funded, and intends to transfer stewardship to a neutral, multi-stakeholder body. Everything
+is CC0: anyone may use, change or republish it.</p>
+
+<h2 id="privacy">Privacy</h2>
+<p>This page and the Implementation Guide are served by GitHub Pages. GitHub logs the IP address
+of every visitor for security, whether or not they are signed in to GitHub, under the
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>;
+the steward receives no record of visits. These pages set no cookies and use no analytics.
+This page runs no scripts. The Implementation Guide's pages are generated by HL7's FHIR
+publishing tools: they run scripts served from this site, which remember display choices
+(such as an open tab) in your browser's storage, on your device, and a few of them load a
+help icon from hl7.org.</p>
+<p>The checker, where you enter a diet, is a separate service at checker.openanimalnutrition.org,
+on Amazon Lightsail. In normal use it keeps no record of what you enter or of IP addresses;
+the one exception is an unexpected failure, when its log, kept for 3 days, may hold part of
+the request. Its <a href="https://checker.openanimalnutrition.org/about">About page</a> says exactly what
+it keeps. Through an AI assistant, what you type in the assistant you use is covered by that
+provider's terms, not by this site.</p>
+<p><strong>Why GitHub.</strong> The project's code, data, issues and reviews are already on GitHub. Serving
+these pages from there means each version of the guide is built in public, by a workflow
+anyone can inspect, and publishing a new version takes a change merged on GitHub rather than
+running a server, which the volunteer experts of a governance body should not need to do.
+These pages also stay up if the checker has to be taken offline, and they move with the
+GitHub organization when stewardship is transferred. The cost is a record of visitors' IP
+addresses, held by GitHub. We accepted it for pages that only publish information; the
+checker, which receives what you enter, keeps its stricter promise.</p>
+</main>
+<footer class="site-footer">
+<ul class="inline">
+<li><a href="https://checker.openanimalnutrition.org/">Checker</a></li>
+<li><a href="/fhir/animal-nutrition/">Implementation Guide</a></li>
+<li><a href="https://github.com/openanimalnutrition">GitHub</a></li>
+<li><a href="#privacy">Privacy</a></li>
+</ul>
+</footer>
+</body>
+</html>

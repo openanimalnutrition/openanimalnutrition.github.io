@@ -1,0 +1,97 @@
+/* Open Animal Nutrition homepage. One stylesheet: no scripts, images, icons or web fonts.
+   Colours, type and frame from the checker's server/static/style.css (release 0.10.0). */
+:root {
+  --ink: #0b0c0c;
+  --muted: #484f53;
+  --rule: #b1b4b6;
+  --paper: #ffffff;
+  --shade: #f3f2f1;
+  --link: #1d4f91;
+  --link-hover: #0f2f5c;
+  --visited: #4c2c92;
+  --focus: #ffdd00;
+  --edge: max(1rem, calc((100% - 62rem) / 2));
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 1rem/1.5 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-wrap: break-word;
+}
+
+/* Page frame */
+.site-header, main, .site-footer { padding-left: var(--edge); padding-right: var(--edge); }
+.site-header { border-bottom: 4px solid var(--ink); padding-top: .75rem; padding-bottom: .75rem; }
+.site-header p { margin: 0; }
+.site-name, .site-name:visited { color: var(--ink); font-size: 1.125rem; font-weight: 700; text-decoration: none; }
+.site-name:hover { text-decoration: underline; }
+.site-footer { border-top: 1px solid var(--rule); margin-top: 3rem; padding-top: 1.5rem; padding-bottom: 2rem; }
+
+/* Text */
+h1, h2 { line-height: 1.25; margin: 2.5rem 0 1rem; }
+h1 { font-size: 2.5rem; margin-top: 2rem; }
+h2 { font-size: 1.5rem; padding-top: .5rem; border-top: 1px solid var(--rule); }
+p, ul, ol { margin: 0 0 1rem; }
+p, li { max-width: 46rem; }
+li { margin-bottom: .25rem; }
+.lead { font-size: 1.3125rem; max-width: 40rem; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9375em; overflow-wrap: anywhere; }
+:target { background: var(--shade); }
+
+/* Links and keyboard focus */
+a { color: var(--link); text-underline-offset: .15em; overflow-wrap: anywhere; }
+a:visited { color: var(--visited); }
+a:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+a:focus-visible { background: var(--focus); color: var(--ink); outline-offset: 0; }
+
+/* The three main links, shown as buttons */
+.buttons { display: flex; flex-wrap: wrap; gap: .75rem; list-style: none; padding: 0; margin: 1.5rem 0; }
+.buttons li { margin: 0; }
+.button, .button:visited {
+  display: inline-block; min-height: 2.75rem; padding: .5rem 1.25rem; border: 2px solid var(--link);
+  background: var(--link); color: #fff; font-weight: 700; text-decoration: none;
+}
+.button:hover { background: var(--link-hover); border-color: var(--link-hover); color: #fff; }
+.buttons li + li .button, .buttons li + li .button:visited { background: var(--paper); color: var(--link); }
+.buttons li + li .button:hover { background: var(--shade); color: var(--link-hover); }
+.button:focus-visible, .buttons li + li .button:focus-visible { background: var(--focus); border-color: var(--ink); color: var(--ink); }
+
+/* Status (as the checker's caveats: always open, bordered) and the call to take part */
+.status { border: 4px solid var(--ink); padding: 1rem 1.25rem; margin: 0 0 1.5rem; max-width: 46rem; }
+.status p { margin: 0; }
+.callout { border-left: 6px solid var(--link); background: var(--shade); padding: .75rem 1rem; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; margin: 0 0 1.5rem; }
+th, td { text-align: left; vertical-align: top; padding: .5rem 1rem .5rem 0; border-bottom: 1px solid var(--rule); }
+thead th { border-bottom: 2px solid var(--ink); vertical-align: bottom; }
+tbody th { font-weight: 400; width: 45%; }
+.inline { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; list-style: none; padding: 0; margin: 0; }
+.inline li { margin: 0; }
+
+/* Phones: stacked table (labels from td[data-label]) */
+@media (max-width: 39.99rem) {
+  h1 { font-size: 1.875rem; }
+  h2 { font-size: 1.3125rem; }
+  .lead { font-size: 1.125rem; }
+  .status { padding: .75rem; }
+  .stack, .stack tbody { display: block; }
+  .stack thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .stack tr { display: block; padding: .75rem 0; border-bottom: 1px solid var(--rule); }
+  .stack th, .stack td { display: block; width: auto; padding: 0; border: 0; }
+  .stack tbody th { font-weight: 700; margin-bottom: .25rem; }
+}
+
+@media print {
+  body { font-size: 12pt; }
+  .site-header, main, .site-footer { padding-left: 0; padding-right: 0; }
+  .buttons { display: none; }
+  a, a:visited { color: var(--ink); }
+  main a[href^="http"]::after { content: " (" attr(href) ")"; }
+  h2 { break-after: avoid; }
+  tr, .status { break-inside: avoid; }
+}

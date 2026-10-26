@@ -1,0 +1,94 @@
+# Publishes one release of the IG. Run by hand: Actions > release > Run workflow, with the
+# version. It builds the guide from the IG repository's tag v<version> with HL7's IG Publisher
+# (publishing/release.sh), commits what the publisher wrote into site/fhir to a new branch and
+# opens a pull request; merging that pull request puts the release on the site (pages.yml).
+#
+# Written 26 Oct 2026. The publisher is pinned by version and checksum (the steward's build box
+# uses the same), as are SUSHI and Jekyll by version. The build uses HL7's terminology server
+# (tx.fhir.org), as an ordinary IG build does. The run keeps the publisher's log, its build zip
+# and the updated registry file for 90 days. Needs, once: Settings > Actions > General >
+# "Allow GitHub Actions to create and approve pull requests".
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to publish, e.g. 0.1.0 (the IG repository needs the tag v0.1.0)"
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    env:
+      VERSION: ${{ inputs.version }}
+      PUBLISHER_VERSION: 3.0.1
+      PUBLISHER_SHA256: 2862e5455d6023f7b4b17642341d04f4fee5199daa140ceb2e01c1e75ab27ecc
+      SUSHI_VERSION: 3.21.0
+      JEKYLL_VERSION: 4.4.1
+    steps:
+      - name: Check the version
+        run: |
+          [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "not a version: $VERSION"; exit 1; }
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: openanimalnutrition/animal-nutrition-ig
+          ref: v${{ inputs.version }}
+          path: ig-source
+      - name: Move the IG source out of this repository's folder
+        run: mv ig-source "$RUNNER_TEMP/ig-source"
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: SUSHI and Jekyll
+        run: |
+          npm install -g --ignore-scripts "fsh-sushi@$SUSHI_VERSION"
+          sudo gem install --no-document jekyll -v "$JEKYLL_VERSION"
+      - name: IG Publisher
+        run: |
+          curl -fsSL --proto '=https' -o "$RUNNER_TEMP/publisher.jar" \
+            "https://github.com/HL7/fhir-ig-publisher/releases/download/$PUBLISHER_VERSION/publisher.jar"
+          echo "$PUBLISHER_SHA256  $RUNNER_TEMP/publisher.jar" | sha256sum -c -
+      - name: Publish the release into site/fhir
+        run: publishing/release.sh "$VERSION" "$RUNNER_TEMP/ig-source" "$RUNNER_TEMP/publisher.jar" "$RUNNER_TEMP/work"
+      - name: Keep the publisher's log and build
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-${{ inputs.version }}
+          path: |
+            ${{ runner.temp }}/work/zips
+            ${{ runner.temp }}/work/fhir-ig-list.json
+          if-no-files-found: ignore
+      - name: Open a pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          branch="release-$VERSION"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add site/fhir
+          git commit -q -m "Publish the IG, version $VERSION"
+          git push -q origin "$branch"
+          gh pr create --base main --head "$branch" --title "Publish the IG, version $VERSION" --body "$(cat <<EOF
+          Version $VERSION of the Open Animal Nutrition IG, built from [animal-nutrition-ig at v$VERSION](https://github.com/openanimalnutrition/animal-nutrition-ig/tree/v$VERSION) with IG Publisher $PUBLISHER_VERSION. The publisher's log and build zip are kept with [the run]($RUN_URL).
+
+          Merging publishes it at https://openanimalnutrition.org/fhir/animal-nutrition/$VERSION and makes it the current version at https://openanimalnutrition.org/fhir/animal-nutrition.
+          EOF
+          )"

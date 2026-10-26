@@ -1,0 +1,19 @@
+{
+  "website" : {
+    "style" : "fhir.layout",
+    "url" : "https://openanimalnutrition.org/fhir",
+    "server" : "cloud",
+    "github" : true,
+    "org" : "Open Animal Nutrition",
+    "clone-xml-json" : false
+  },
+  "feeds" : {
+    "package" : "package-feed.xml",
+    "publication" : "publication-feed.xml"
+  },
+  "layout-rules" : [{
+    "npm" : "openanimalnutrition.fhir.animalnutrition",
+    "canonical" : "https://openanimalnutrition.org/fhir/animal-nutrition",
+    "destination" : "/animal-nutrition"
+  }]
+}
